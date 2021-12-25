@@ -22,7 +22,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v12.0&appId=234693599922230&autoLogAppEvents=1" nonce="XSIKniX8"></script>
+   
     <section id="hero" class=" bg-white overflow-hidden">
       <div id="home" class="jumbo max-w-7xl mx-auto">
         <div
@@ -83,20 +84,20 @@
                   <div
                     class="flex items-center  w-full md:w-auto"
                   >
-                    <a href="#home">
+                    <a href="#">
                       <img
                         class="h-8 w-auto sm:h-10"
                         src="./assets/img/logo.png"
                       />
                     </a>
                     <a
-                    href="#contacts"
+                    href="#contatti"
                     class="font-medium text-gray-500 hover:text-gray-900"
                     >Contatti</a
                   >
 
                   <a
-                    href="#maps"
+                    href="#dove-ricevo"
                     class="font-medium text-gray-500 hover:text-gray-900"
                     >Dove ricevo</a
                   >
@@ -145,7 +146,7 @@
                   lg:mx-0
                 "
               >
-               Prenditi cura di te e di chi ti sta accanto.
+              Cum lenitate asperitas – Le difficoltà vanno trattate con dolcezza.
               </p>
               <div
                 class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
@@ -189,12 +190,15 @@
     </section>
     <section id="arrow">
       <div class="arrow flex justify-center">
-        <a href="#services"><i class=" animate__animated animate__fadeInDownBig fas fa-chevron-down"></i></a>
+        <a href="#consulenze"><i class=" animate__animated animate__fadeInDownBig fas fa-chevron-down"></i></a>
       </div>
     </section>
     
-    <section id="maps">
-      <h2 class="text-white text-3xl pl-10 pr-10 text-center pt-20 sm:text-4xl leading-8 font-extrabold tracking-tight">Si riceve su appuntamento da Lunedì al Sabato </h2>
+    <section id="dove-ricevo" class="pt-5">
+      <div class="lg:text-center"">
+        <h2 class="text-white text-3xl pl-5 pr-10  pt-12 sm:text-4xl leading-8 font-extrabold tracking-tight">Su appuntamento da Lunedì al Sabato </h2>
+      </div>
+     
       <div class="container flex justify-around flex-wrap pt-20 pb-32">
         <div class="max-w-sm rounded-lg overflow-hidden shadow-2xl m-5">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2585.318168294285!2d7.716146015371448!3d45.179860179098554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886ffac97cfe99%3A0x35f287032d760b87!2sVia%20Giotto%2C%206%2C%2010040%20Lein%C3%AC%20TO!5e1!3m2!1sit!2sit!4v1640338674342!5m2!1sit!2sit" width="400" height="280" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -218,19 +222,17 @@
        
       </div>
     </section>
-   
     
-   <section id="services" class="pb-20">
-    <footer class="container">
-      <div class="py-12 bg-white">
+   <section id="consulenze" class="pb-32 pt-5 container">
+      <div class="py-8 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="lg:text-center">
-            <p class=" services mt-2 text-3xl leading-8 font-extrabold tracking-tight  sm:text-4xl">
+            <p class=" services mt-2 text-3xl leading-8 font-extrabold tracking-tight pb-10 sm:text-4xl">
               Consulenze
             </p>
             <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              Mi chiamo Ilaria Mezzanotti, sono una Psicologa clinica abilitata e nel mentre mi sto specializzando presso la Scuola Gestalt di Torino.
-              La Terapia della Gestalt è una terapia esperienziale, volta all’accrescimento delle potenzialità del sè e delle qualità relazionali; si sviluppa da una concezione olistica, fenomenologica ed esistenzialista dell’essere umano e delle sue relazioni.
+              Mi chiamo Ilaria Mezzanotti, sono una Psicologa clinica abilitata e specializzanda presso la Scuola Gestalt di Torino. <br>
+              La Terapia della Gestalt è una terapia esperienziale, volta all’accrescimento delle potenzialità del sè e delle qualità relazionali.
             </p>
           </div>
 
@@ -300,15 +302,61 @@
                   </div>
                   <p class="ml-16 text-xl leading-6 font-medium text-gray-900">Colloqui online</p>
                 </dt>
-              
               </div>
             </dl>
           </div>
         </div>
       </div>
+    </section>
 
-    </footer>
-   </section>
+    <section id="arrow_">
+      <div class="arrow flex justify-end lg:justify-center">
+        <a href="#"><i class=" animate__animated animate__fadeInUpBig fas fa-chevron-up"></i></a>
+      </div>
+    </section>
+
+    <footer id="contatti" class=" text-center lg:text-left text-gray-600">
+      <div class="container left pb-5 pt-5  md:text-left">
+        <div class=" flex lg:justify-center pb-10">
+          <h6 class="pt-10 contact pb-5 text-3xl text-3x font-extrabold  sm:text-4xl mb-4  font-medium">
+            Contatti
+          </h6>
+        </div>
+        
+        <div class="pb-10 l-r">
+          <div class="left">
+            <p class="flex items-center  md:justify-start  mb-4 font-medium">
+              <i class="fas fa-envelope-square"></i>
+              ilaria.mezzanotti@gmail.com
+            </p>
+            <p class="flex items-center  md:justify-start mb-4  font-medium">
+              <i class="fas fa-phone-square-alt"></i>
+              +39 3663712597
+            </p>
+            <p class="flex items-center  md:justify-start mb-4  font-medium">
+              <i class="fab fa-instagram-square"></i>
+              <a href="https://www.instagram.com/ilaria.mezzanotti_psicologa/" target="_blank" class="font-medium insta mr-6 text-gray-600">
+              ilaria.mezzanotti_psicologa
+              </a>
+            </p>
+          </div>
+          
+            <div class="right" id="fb-root">
+              <div class="fb-page" 
+                data-href="https://www.facebook.com/Ilaria-Mezzanotti-555896758166738"
+                data-width="280" 
+                data-hide-cover="false"
+                data-show-facepile="false"></div>
+            </div>
+        </div>
+        
+      </div>
+      
+      <div class="footer-bottom text-center p-2">
+        <a class="text-gray-600 wvwall font-semibold" target="_blank" href="https://www.linkedin.com/in/walter-velardo/">@wvwall</a>
+      </div>
+  </footer>
+  
     
 
     <script src="./assets/js/main.js"></script>
