@@ -2,21 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 .container {
   width: 90%;
   margin: 0 auto;
 }
+
 .jumbo {
   position: relative;
 }
 .jumbo nav .nav a {
   margin-right: 20px;
 }
+
 #hero main .title {
   color: #3a4145;
 }
@@ -33,12 +37,15 @@ html {
 #hero main .btn:hover {
   background-color: #f29882;
 }
+
 #arrow .arrow {
   color: #649d8d;
   font-size: 45px;
   position: absolute;
   top: 88%;
+  /* position the top  edge of the element at the middle of the parent */
   left: 50%;
+  /* position the left edge of the element at the middle of the parent */
   cursor: pointer;
   transform: translate(-50%, -50%);
   z-index: 100;
@@ -50,6 +57,7 @@ html {
     font-size: 30px;
   }
 }
+
 #arrow_ .arrow {
   color: #649d8d;
   font-size: 45px;
@@ -62,12 +70,14 @@ html {
     margin-bottom: 50px;
   }
 }
+
 #dove-ricevo {
   background-color: #e9828d;
 }
 #dove-ricevo div {
   cursor: pointer;
 }
+
 #consulenze .services {
   color: #649d8d;
 }
@@ -77,6 +87,11 @@ html {
 #consulenze .text-gray-900 {
   color: #3a4245;
 }
+#consulenze .gestalt {
+  color: #e9828d;
+  text-decoration: underline;
+}
+
 #contatti {
   background-color: #92c5b6;
   color: #3a4245;
@@ -127,7 +142,7 @@ html {
   }
 }
 #contatti .footer-bottom {
-  background-color: #92c5b6;
+  background-color: #649d8d;
 }
 #contatti .footer-bottom .wvwall {
   color: #e9828d;
