@@ -40,7 +40,7 @@ html {
 
 #arrow .arrow {
   color: #649d8d;
-  font-size: 45px;
+  font-size: 50px;
   position: absolute;
   top: 650px;
   /* position the top  edge of the element at the middle of the parent */
@@ -54,18 +54,18 @@ html {
   #arrow .arrow {
     top: 6%;
     left: 90%;
-    font-size: 30px;
+    font-size: 35px;
   }
 }
 
 #arrow_ .arrow {
-  color: #649d8d;
-  font-size: 45px;
+  color: #e9828d;
+  font-size: 50px;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 1023px) {
   #arrow_ .arrow {
-    font-size: 30px;
+    font-size: 35px;
     margin-right: 30px;
     margin-bottom: 50px;
   }
