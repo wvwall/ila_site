@@ -91,6 +91,14 @@ html {
   color: #e9828d;
   text-decoration: underline;
 }
+#consulenze .widget {
+  margin-right: 10px;
+  margin-top: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 #contatti {
   background-color: #92c5b6;
