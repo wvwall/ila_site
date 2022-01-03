@@ -128,7 +128,7 @@ html {
 }
 @media screen and (max-width: 768px) {
   #contatti .l-r {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 #contatti .l-r .left {
@@ -141,12 +141,17 @@ html {
 }
 #contatti .l-r .right {
   margin-left: 150px;
+  margin-top: 25px;
 }
 @media screen and (max-width: 768px) {
   #contatti .l-r .right {
     margin-left: 20px;
     margin-bottom: 40px;
-    width: 280px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #contatti .l-r .right {
+    width: 180px;
   }
 }
 #contatti .footer-bottom {
