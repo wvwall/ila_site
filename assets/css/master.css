@@ -17,24 +17,24 @@ html {
 .jumbo {
   position: relative;
 }
-.jumbo nav .nav a {
+.jumbo div .nav a {
   margin-right: 20px;
 }
 
-#hero main .title {
+#hero div .title {
   color: #3a4145;
 }
-#hero main .title_2 {
+#hero div .title_2 {
   color: #649d8d;
 }
-#hero main .btn {
+#hero div .btn {
   background-color: #e9828d;
 }
-#hero main .btn .fa-whatsapp {
+#hero div .btn .fa-whatsapp {
   margin-left: 10px;
   font-size: 25px;
 }
-#hero main .btn:hover {
+#hero div .btn:hover {
   background-color: #f29882;
 }
 
@@ -140,7 +140,7 @@ html {
   }
 }
 #contatti .l-r .right {
-  margin-left: 150px;
+  margin-left: 100px;
   margin-top: 25px;
 }
 @media screen and (max-width: 768px) {
