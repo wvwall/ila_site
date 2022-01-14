@@ -72,6 +72,7 @@ html {
 }
 
 #dove-ricevo {
+  border-radius: 15px;
   background-color: #e9828d;
 }
 #dove-ricevo div {
@@ -102,6 +103,7 @@ html {
 
 #contatti {
   background-color: #92c5b6;
+  border-radius: 15px;
   color: #3a4245;
 }
 #contatti .container p {
@@ -140,18 +142,13 @@ html {
   }
 }
 #contatti .l-r .right {
-  margin-left: 100px;
+  margin-left: 160px;
   margin-top: 25px;
 }
 @media screen and (max-width: 768px) {
   #contatti .l-r .right {
     margin-left: 20px;
     margin-bottom: 40px;
-  }
-}
-@media screen and (max-width: 400px) {
-  #contatti .l-r .right {
-    width: 180px;
   }
 }
 #contatti .footer-bottom {
