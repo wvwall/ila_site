@@ -109,9 +109,14 @@ html {
 #contatti .container p {
   margin-left: 20px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1450px) {
   #contatti .container p {
     margin-left: 15%;
+  }
+}
+@media screen and (max-width: 1439px) {
+  #contatti .container p {
+    margin-left: 10%;
   }
 }
 #contatti .insta {
