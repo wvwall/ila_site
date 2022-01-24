@@ -109,6 +109,11 @@ html {
 #contatti .container p {
   margin-left: 20px;
 }
+@media screen and (min-width: 1440px) {
+  #contatti .container p {
+    margin-left: 15%;
+  }
+}
 #contatti .insta {
   color: #3a4245;
 }
@@ -149,6 +154,11 @@ html {
   #contatti .l-r .right {
     margin-left: 20px;
     margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #contatti .l-r .right {
+    margin-right: 10%;
   }
 }
 #contatti .footer-bottom {
