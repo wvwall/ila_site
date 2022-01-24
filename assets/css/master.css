@@ -106,9 +106,6 @@ html {
   border-radius: 15px;
   color: #3a4245;
 }
-#contatti .container p {
-  margin-left: 20px;
-}
 @media screen and (min-width: 1450px) {
   #contatti .container p {
     margin-left: 15%;
@@ -117,6 +114,11 @@ html {
 @media screen and (max-width: 1439px) {
   #contatti .container p {
     margin-left: 10%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #contatti .container p {
+    margin-left: 20px;
   }
 }
 #contatti .insta {
