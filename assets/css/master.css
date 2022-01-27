@@ -106,21 +106,6 @@ html {
   border-radius: 15px;
   color: #3a4245;
 }
-@media screen and (min-width: 1450px) {
-  #contatti .container p {
-    margin-left: 15%;
-  }
-}
-@media screen and (max-width: 1439px) {
-  #contatti .container p {
-    margin-left: 10%;
-  }
-}
-@media screen and (max-width: 768px) {
-  #contatti .container p {
-    margin-left: 20px;
-  }
-}
 #contatti .insta {
   color: #3a4245;
 }
@@ -139,14 +124,12 @@ html {
 }
 #contatti .l-r {
   display: flex;
+  justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
   #contatti .l-r {
     flex-direction: column;
   }
-}
-#contatti .l-r .left {
-  width: 70%;
 }
 @media screen and (max-width: 768px) {
   #contatti .l-r .left {
@@ -154,18 +137,11 @@ html {
   }
 }
 #contatti .l-r .right {
-  margin-left: 160px;
   margin-top: 25px;
 }
 @media screen and (max-width: 768px) {
   #contatti .l-r .right {
-    margin-left: 20px;
     margin-bottom: 40px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  #contatti .l-r .right {
-    margin-right: 10%;
   }
 }
 #contatti .footer-bottom {
