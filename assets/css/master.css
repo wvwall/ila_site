@@ -72,7 +72,7 @@ html {
 }
 
 #dove-ricevo {
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: #e9828d;
 }
 #dove-ricevo div {
@@ -103,7 +103,7 @@ html {
 
 #contatti {
   background-color: #92c5b6;
-  border-radius: 15px;
+  border-radius: 10px;
   color: #3a4245;
 }
 #contatti .insta {
