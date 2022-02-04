@@ -57,6 +57,13 @@ html {
     font-size: 35px;
   }
 }
+@media screen and (max-width: 310px) {
+  #arrow .arrow {
+    top: 12%;
+    left: 90%;
+    font-size: 35px;
+  }
+}
 
 #arrow_ .arrow {
   color: #e9828d;
@@ -113,6 +120,11 @@ html {
   color: #3a4245;
   font-size: 30px;
   margin-right: 15px;
+}
+@media screen and (max-width: 290px) {
+  #contatti a {
+    font-size: 14px;
+  }
 }
 #contatti .contact {
   text-align: left;
