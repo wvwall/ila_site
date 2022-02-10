@@ -181,6 +181,9 @@ html {
 }
 #contatti .l-r .right {
   margin-top: 25px;
+  height: 180px;
+  width: 180px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 @media screen and (max-width: 768px) {
   #contatti .l-r .right {
