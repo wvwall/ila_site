@@ -18,7 +18,14 @@ html {
   position: relative;
 }
 .jumbo div .nav a {
-  margin-right: 20px;
+  margin-right: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 3px 6px;
+  border-radius: 6px;
+}
+.jumbo div .nav a.no-shad {
+  box-shadow: none;
+  margin-right: 5px;
 }
 
 #hero div .title {
@@ -29,6 +36,8 @@ html {
 }
 #hero div .btn {
   background-color: #e9828d;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
 }
 #hero div .btn .fa-whatsapp {
   margin-left: 10px;
@@ -39,8 +48,8 @@ html {
 }
 
 #arrow .arrow {
-  color: #649d8d;
-  font-size: 50px;
+  color: #fff;
+  font-size: 40px;
   position: absolute;
   top: 650px;
   /* position the top  edge of the element at the middle of the parent */
@@ -50,29 +59,42 @@ html {
   transform: translate(-50%, -50%);
   z-index: 100;
 }
+#arrow .arrow .fa-chevron-down {
+  background-color: #649d8d;
+  padding: 3px 5px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
 @media screen and (max-width: 1023px) {
   #arrow .arrow {
     top: 6%;
     left: 90%;
-    font-size: 35px;
+    font-size: 30px;
   }
 }
-@media screen and (max-width: 310px) {
+@media screen and (max-width: 320px) {
   #arrow .arrow {
-    top: 12%;
+    margin-top: 12px;
+    top: 15%;
     left: 90%;
     font-size: 35px;
   }
 }
 
 #arrow_ .arrow {
-  color: #e9828d;
-  font-size: 50px;
+  color: #fff;
+  font-size: 40px;
   margin-bottom: 20px;
+}
+#arrow_ .arrow .fa-chevron-up {
+  background-color: #e9828d;
+  padding: 3px 5px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 @media screen and (max-width: 1023px) {
   #arrow_ .arrow {
-    font-size: 35px;
+    font-size: 30px;
     margin-right: 30px;
     margin-bottom: 50px;
   }
@@ -120,6 +142,15 @@ html {
   color: #3a4245;
   font-size: 30px;
   margin-right: 15px;
+}
+#contatti a {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 3px 6px;
+  border-radius: 6px;
+}
+#contatti a.no-shad {
+  box-shadow: none;
+  margin-right: 5px;
 }
 @media screen and (max-width: 290px) {
   #contatti a {
