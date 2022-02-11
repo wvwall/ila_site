@@ -63,7 +63,7 @@ html {
   background-color: #649d8d;
   padding: 3px 5px;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 @media screen and (max-width: 1023px) {
   #arrow .arrow {
@@ -90,7 +90,7 @@ html {
   background-color: #e9828d;
   padding: 3px 5px;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 @media screen and (max-width: 1023px) {
   #arrow_ .arrow {
