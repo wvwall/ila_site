@@ -115,6 +115,12 @@ html {
 #dove-ricevo div {
   cursor: pointer;
 }
+#dove-ricevo .online {
+  text-align: center;
+  padding-bottom: 40px;
+  color: #fff;
+  font-size: 18px;
+}
 
 #consulenze .services {
   color: #649d8d;
