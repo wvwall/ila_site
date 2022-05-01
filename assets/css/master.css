@@ -33,7 +33,7 @@ html {
 }
 
 #hero {
-  height: 95vh;
+  height: 98vh;
 }
 @media screen and (max-width: 1023px) {
   #hero {
