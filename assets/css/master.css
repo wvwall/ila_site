@@ -63,7 +63,7 @@ html {
   color: #fff;
   font-size: 35px;
   position: absolute;
-  top: 85vh;
+  top: 88vh;
   /* position the top  edge of the element at the middle of the parent */
   left: 50%;
   /* position the left edge of the element at the middle of the parent */
@@ -126,6 +126,18 @@ html {
   font-size: 18px;
 }
 
+#consulenze .container-consu {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  #consulenze .container-consu {
+    flex-direction: column;
+  }
+  #consulenze .container-consu .service {
+    margin-top: 50px;
+  }
+}
 #consulenze .services {
   color: #649d8d;
 }
