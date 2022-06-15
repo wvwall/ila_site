@@ -920,7 +920,7 @@ html {
 }
 @media screen and (max-width: 1023px) {
   #arrow .arrow {
-    top: 8%;
+    top: 6%;
     left: 90%;
   }
 }
