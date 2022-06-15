@@ -21,15 +21,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdn.tailwindcss.com"></script>
+
   <title>Dott.ssa Ilaria Mezzanotti | Psicologa e Psicoterapeuta </title>
 </head>
 
 <body>
   
 <nav>
-<section id="hero" class=" bg-white overflow-hidden">
-  <div id="home" class="jumbo max-w-7xl mx-auto">
+<section id="hero" class="bg-white overflow-hidden h-auto xl:h-screen">
+  <div id="home" class="jumbo max-w-7xl mx-auto relative">
     <div class=" 
           z-10
           pb-8
@@ -64,21 +64,20 @@
                 lg:justify-start
               " aria-label="Global">
             <div class="
-                  nav
                   flex
                   items-center
                   flex-grow flex-shrink-0
                   lg:flex-grow-0
                 ">
               <div class="flex items-center  w-full md:w-auto">
-                <a title="home" href="#" class="no-shad">
-                  <img class="h-8 w-auto sm:h-10 logo" title="Ilaria Mezzanotti" src="./assets/img/logo.webp"
+                <a title="home" href="#" class=" px-2 py-1 rounded-md">
+                  <img class="h-8 w-auto sm:h-10 " title="Ilaria Mezzanotti" src="./assets/img/logo.webp"
                     alt="logo_sito" />
                 </a>
                 <a title="contatti" href="#contatti"
-                  class="font-semibold text-gray-500 hover:-translate-y-1 hover:scale-110 transition ease-in-out delay-50 hover:text-gray-900">Contatti</a>
+                  class="shadow-3xl rounded-md mr-3 px-2 py-1 font-semibold text-gray-500 hover:-translate-y-1 hover:scale-110 transition ease-in-out delay-50 hover:text-gray-900">Contatti</a>
 
-                <a title="dove ricevo" href="#dove-ricevo" class="font-semibold hover:scale-110 transition ease-in-out delay-50 text-gray-500 hover:text-gray-900 ">Dove
+                <a title="dove ricevo" href="#dove-ricevo" class="shadow-3xl rounded-md mr-3 px-2 py-1 font-semibold hover:scale-110 transition ease-in-out delay-50 text-gray-500 hover:text-black">Dove
                   ricevo ?</a>
               </div>
             </div>
@@ -106,8 +105,8 @@
                 sm:text-5xl
                 md:text-6xl
               ">
-              <span class="block title xl:inline">Psicologa Psicoterapeuta</span>
-              <span class="block title_2 xl:inline">Dott.ssa Ilaria Mezzanotti</span>
+              <span class="block title xl:inline text-black ">Psicologa Psicoterapeuta</span>
+              <span class="block title_2 xl:inline text-sec_color">Dott.ssa Ilaria Mezzanotti</span>
             </h1>
             <p class="
                 mt-3
@@ -121,7 +120,7 @@
             <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div class="rounded-md shadow">
                 <a title="appuntamenti" target="_blank" itemprop="url" href="https://wa.me/393663712597" class="
-                    btn
+                    shadow-3xl
                     w-full
                     flex
                     items-center
@@ -131,14 +130,15 @@
                     border border-transparent
                     text-base
                     font-medium
-                    rounded-md
+                    rounded-lg
                     text-white
                     md:py-4 md:text-lg md:px-10
+                    bg-pri_color
+                    hover:bg-hover_btn
                   ">
-                  Richiedi un appuntamento <i class="fab fa-whatsapp"></i>
+                  Richiedi un appuntamento <i class="fab fa-whatsapp ml-2 text-2xl "></i>
                 </a>
               </div>
-
             </div>
           </div>
         </div>
@@ -151,15 +151,15 @@
 </section>
 
 <section id="arrow">
-  <div class="arrow flex justify-center">
+  <div class="arrow flex justify-center cursor-pointer mt-3 lg:mt-0 text-3xl lg:text-4xl absolute">
     <a title="consulenze" href="#consulenze" class="hover:-translate-y-1 hover:scale-110 transition ease-in-out delay-50" ><i
-        class="animate__animated animate__fadeInDownBig fas fa-chevron-down"></i></a>
+        class="animate__animated animate__fadeInDownBig fas fa-chevron-down bg-sec_color text-white shadow-3xl rounded-xl py-1 px-2"></i></a>
   </div>
 </section>
 </nav>   
  
 <main>
-<section id="dove-ricevo" class="pt-5">
+<section id="dove-ricevo" class="pt-5 rounded-lg bg-pri_color">
   <div class="lg:text-center">
     <h2 class="text-white text-2xl pl-8 pr-8  pt-12 sm:text-3xl leading-8 font-extrabold tracking-tight">Su appuntamento: </h2>
     <span class="text-white text-2xl pl-8 pr-8  pt-12 sm:text-2xl leading-8 font-extrabold tracking-tight"> [Da Lunedì a Sabato]</span> 
@@ -188,19 +188,19 @@
       </div>
     </div>
   </div>
-  <h3 class="online"><i class="fa-solid fa-wifi"></i> Disponibile Online </h3>
+  <h3 class="text-center pb-10 text-white text-xl"><i class="fa-solid fa-wifi"></i> Disponibile Online </h3>
 </section>
 
 <section id="consulenze" class="pb-16 pt-5 container">
   <div class="py-8 bg-white">
-    <h3 class="pl-4 services mt-2 text-3xl leading-8 font-extrabold tracking-tight pb-10 sm:text-4xl md:text-center">
+    <h3 class="pl-4 services text-sec_color mt-2 text-3xl leading-8 font-extrabold tracking-tight pb-10 sm:text-4xl md:text-center">
       Consulenze
     </h3>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 container-consu mt-20 mb-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  mt-20 mb-14 flex align-middle flex-col xl:flex-row ">
       <div class="lg:text-center lg:px-20">
         <p itemscope class="max-w-2xl text-2xl text-gray-500 lg:mx-auto ">
           Mi chiamo Ilaria Mezzanotti, sono una Psicologa clinica abilitata e specializzanda presso la <a
-            class="gestalt" itemprop="url" target="_blank"
+            class="text-pri_color underline " itemprop="url" target="_blank"
             title="La Terapia della Gestalt è una terapia esperienziale, volta all’accrescimento delle potenzialità del sè e delle qualita relazionali; si sviluppa da una concezione olistica, fenomenologica ed esistenzialista dell’essere umano e delle sue relazioni."
             href="https://www.scuolapsicoterapiagestalt.it/">Scuola
             Gestalt
@@ -209,11 +209,11 @@
         </p>
       </div>
 
-      <div class="service ">
+      <div class="mt-12 xl:mt-0">
         <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-4 md:gap-y-8">
           <div class="relative">
             <dt>
-              <div class="absolute flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
+              <div class="absolute flex items-center justify-center h-8 w-8 rounded-md bg-hover_btn text-white">
                 <i class="fas fa-check"></i>
               </div>
               <p class="ml-12 text-xl leading-6 font-medium text-gray-900">Prevenzione</p>
@@ -223,7 +223,7 @@
 
           <div class="relative">
             <dt>
-              <div class="absolute flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
+              <div class="absolute flex items-center justify-center h-8 w-8 rounded-md bg-hover_btn text-white">
                 <i class="fas fa-check"></i>
               </div>
               <p class="ml-12 text-xl leading-6 font-medium text-gray-900">Supporto psicologico per adulti e minori
@@ -233,7 +233,7 @@
 
           <div class="relative">
             <dt>
-              <div class="absolute flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
+              <div class="absolute flex items-center justify-center h-8 w-8 rounded-md bg-hover_btn text-white">
                 <i class="fas fa-check"></i>
               </div>
               <p class="ml-12 text-xl leading-6 font-medium text-gray-900">Colloqui individuali e di coppia</p>
@@ -242,7 +242,7 @@
 
           <div class="relative">
             <dt>
-              <div class="absolute flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
+              <div class="absolute flex items-center justify-center h-8 w-8 rounded-md bg-hover_btn text-white">
                 <i class="fas fa-check"></i>
               </div>
               <p class="ml-12 text-xl leading-6 font-medium text-gray-900">Gruppi terapeutici</p>
@@ -251,7 +251,7 @@
 
           <div class="relative">
             <dt>
-              <div class="absolute flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
+              <div class="absolute flex items-center justify-center h-8 w-8 rounded-md bg-hover_btn text-white">
                 <i class="fas fa-check"></i>
               </div>
               <p class="ml-12 text-xl leading-6 font-medium text-gray-900">Consulenze educative</p>
@@ -260,7 +260,7 @@
 
           <div class="relative">
             <dt>
-              <div class="absolute flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
+              <div class="absolute flex items-center justify-center h-8 w-8 rounded-md bg-hover_btn text-white">
                 <i class="fas fa-check"></i>
               </div>
               <p class="ml-12 text-xl leading-6 font-medium text-gray-900">Gestione dello stress</p>
@@ -269,7 +269,7 @@
 
           <div class="relative">
             <dt>
-              <div class="absolute flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
+              <div class="absolute flex items-center justify-center h-8 w-8 rounded-md bg-hover_btn text-white">
                 <i class="fas fa-check"></i>
               </div>
               <p class="ml-12 text-xl leading-6 font-medium text-gray-900">Colloqui online</p>
@@ -284,60 +284,60 @@
 </section>
 
 <section id="arrow_">
-  <div class="arrow flex justify-end lg:justify-center">
-    <a title="appuntamento" href="#" class="hover:-translate-y-1 hover:scale-110 transition ease-in-out delay-50" ><i class=" animate__animated animate__fadeInUpBig fas fa-chevron-up"></i></a>
+  <div class="arrow flex justify-end lg:justify-center text-white text-3xl mb-12 mr-7 xl:mb-10 xl:text-4xl xl:mr-0">
+    <a title="appuntamento" href="#" class="hover:-translate-y-1 hover:scale-110 transition ease-in-out delay-50" ><i class=" animate__animated animate__fadeInUpBig fas fa-chevron-up bg-pri_color text-white shadow-3xl rounded-xl py-1 px-2"></i></a>
   </div>
 </section>
 </main>
 
-<footer id="contatti" class=" text-center lg:text-left text-gray-600">
+<footer id="contatti" class=" text-center lg:text-left bg-thi_color rounded-lg text-black">
   <div class="container  pb-5 pt-5  md:text-left">
     <div class=" flex lg:justify-center ">
-      <h3 class="pt-10 contact pb-5 text-3xl text-3x font-extrabold  sm:text-4xl mb-4 ">
+      <h3 class="pt-10 pb-5 text-3xl font-extrabold  sm:text-4xl mb-4 text-left ml-5 md:ml-0">
         Contatti
       </h3>
     </div>
 
-    <div class="l-r max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="left">
+    <div class="l-r max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between">
+      <div class=" w-full md:w-auto">
         <p class="flex items-center  md:justify-start mb-4  font-medium">
-          <i class="fas fa-phone-square-alt"></i>
-          <a title="cellulare" itemprop="url" href="tel:+393663712597" class="hover:scale-110 transition ease-in-out delay-50">
+          <i class="fas fa-phone-square-alt text-black text-3xl mr-4"></i>
+          <a title="cellulare" itemprop="url" href="tel:+393663712597" class="hover:scale-110 transition ease-in-out delay-50 shadow-3xl rounded-lg px-2 py-1 text-sm">
             366 3712597
           </a>
 
         </p>
         <p class="flex items-center  md:justify-start mb-4  font-medium">
-          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-facebook-square text-black text-3xl mr-4"></i>
           <a title="facebook" itemprop="url" href="https://www.facebook.com/ilaria.mezzanotti.3" target="_blank"
-            class="font-medium insta mr-6 text-gray-600 hover:scale-110 transition ease-in-out delay-50">
+            class="font-medium text-black mr-6 hover:scale-110 transition ease-in-out delay-50 shadow-3xl rounded-lg px-2 py-1 text-sm">
             Ilaria Mezzanotti
           </a>
         </p>
         <p class="flex items-center  md:justify-start mb-4  font-medium">
-          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-linkedin text-black text-3xl mr-4"></i>
           <a title="linkedin" itemprop="url" href="https://www.linkedin.com/in/dott-ssa-ilaria-mezzanotti-026551162/"
-            target="_blank" class="font-medium insta mr-6 text-gray-600 hover:scale-110 transition ease-in-out delay-50">
+            target="_blank" class="font-medium text-black mr-6  hover:scale-110 transition ease-in-out delay-50 shadow-3xl rounded-lg px-2 py-1 text-sm">
             Dott.ssa Ilaria Mezzanotti
           </a>
         </p>
         <p class="flex items-center  md:justify-start mb-4  font-medium">
-          <i class="fab fa-instagram-square"></i>
+          <i class="fab fa-instagram-square text-black text-3xl mr-4"></i>
           <a title="instagram" itemprop="url" href="https://www.instagram.com/ilaria.mezzanotti_psicologa/"
-            target="_blank" class="font-medium insta mr-6 text-gray-600 hover:scale-110 transition ease-in-out delay-50">
+            target="_blank" class="font-medium text-black mr-6  hover:scale-110 transition ease-in-out delay-50 shadow-3xl rounded-lg px-2 py-1 text-sm">
             ilaria.mezzanotti_psicologa
           </a>
         </p>
         <p class="flex items-center  md:justify-start  mb-4 font-medium">
-          <i class="fas fa-envelope-square"></i>
-          <a itemprop="url" title="email" href="mailto:ilaria.mezzanotti@gmail.com" class="hover:scale-110 transition ease-in-out delay-50">
+          <i class="fas fa-envelope-square text-black text-3xl mr-4"></i>
+          <a itemprop="url" title="email" href="mailto:ilaria.mezzanotti@gmail.com" class="hover:scale-110 transition ease-in-out delay-50 shadow-3xl rounded-lg px-2 py-1 text-sm">
             ilaria.mezzanotti@gmail.com
           </a>
         </p>
       </div>
 
-      <div class="right" >
-        <div class="widget">
+      <div class="right mt-10 md:mt-6 shadow-3xl" >
+        <div class=" mr-3 mt-30 w-full flex justify-center align-middle">
           <!-- SnapWidget -->
           <iframe title="instagram" src="https://snapwidget.com/embed/979391" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:180px; height:180px"></iframe>
         </div>
@@ -346,8 +346,8 @@
 
   </div>
 
-  <div class="footer-bottom text-center p-2">
-    <a title="linkedin" itemprop="url" class="no-shad text-gray-600 wvwall font-semibold" target="_blank"
+  <div class="bg-sec_color text-center p-2">
+    <a title="linkedin" itemprop="url" class=" text-white font-semibold" target="_blank"
       href="https://linktr.ee/wvwall"><small> < @wvwall /> </small></a>
   </div>
 </footer>
