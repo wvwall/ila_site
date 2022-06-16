@@ -921,7 +921,7 @@ html {
     left: 90%;
   }
 }
-@media screen and (max-width: 346px) {
+@media screen and (max-width: 370px) {
   #arrow .arrow {
     top: 12%;
     left: 90%;
