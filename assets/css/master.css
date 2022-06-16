@@ -1080,6 +1080,16 @@ html {
   filter: var(--tw-filter);
 }
 
+.dark .dark\:hover\:bg-hover_btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 152 130 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:hover\:bg-thi_color:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(146 197 182 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 480px) {
 
   .sm\:mx-auto {
