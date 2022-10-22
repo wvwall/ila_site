@@ -1,1 +1,1 @@
-[[headers]] for = "/*"  cache-control ="max-age=31536000" 
+[[headers]] for = "/opt/build/repo/netlify.toml"  cache-control ="max-age=31536000" 
