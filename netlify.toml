@@ -1,1 +1,8 @@
-[[headers]] for = "/opt/build/repo/netlify.toml"  cache-control ="max-age=31536000" 
+[[headers]]
+  for = "/*"
+  [headers.values]
+
+    #  Multi-value headers are expressed with multi-line strings
+	cache-control = max-age=31536000,
+
+  
