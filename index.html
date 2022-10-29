@@ -470,29 +470,29 @@
         }
       }
 
-      const observer1 = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate__slideInLeft')
-          }
-        })
-      })
+      // const observer1 = new IntersectionObserver((entries) => {
+      //   entries.forEach((entry) => {
+      //     if (entry.isIntersecting) {
+      //       entry.target.classList.add('animate__slideInLeft')
+      //     }
+      //   })
+      // })
 
-      observer1.observe(document.querySelector('.destra'))
-      observer1.observe(document.querySelector('.destra0'))
-      observer1.observe(document.querySelector('.destra1'))
-      // observer1.observe(document.querySelector('.destra2'))
-      const observer2 = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate__slideInRight')
-          }
-        })
-      })
+      // observer1.observe(document.querySelector('.destra'))
+      // observer1.observe(document.querySelector('.destra0'))
+      // observer1.observe(document.querySelector('.destra1'))
+      // // observer1.observe(document.querySelector('.destra2'))
+      // const observer2 = new IntersectionObserver((entries) => {
+      //   entries.forEach((entry) => {
+      //     if (entry.isIntersecting) {
+      //       entry.target.classList.add('animate__slideInRight')
+      //     }
+      //   })
+      // })
 
-      observer2.observe(document.querySelector('.sinistra'))
-      observer2.observe(document.querySelector('.sinistra0'))
-      observer2.observe(document.querySelector('.sinistra1'))
+      // observer2.observe(document.querySelector('.sinistra'))
+      // observer2.observe(document.querySelector('.sinistra0'))
+      // observer2.observe(document.querySelector('.sinistra1'))
       // observer2.observe(document.querySelector('.sinistra2'))
       autoTheme()
       checkbox.addEventListener('click', toggleDark)
