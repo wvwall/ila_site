@@ -66,18 +66,18 @@
                           alt="logo_sito"
                         />
                       </a>
-                      <a
-                        title="contatti"
-                        href="#contatti"
-                        class="shadow-3xl dark:shadow-4xl rounded-md mr-3 px-2 py-1 font-semibold text-gray-500 hover:-translate-y-1 hover:scale-110 transition ease-in-out delay-50 hover:text-gray-900 text-xs md:text-base dark:text-white"
-                        >Contatti</a
-                      >
 
                       <a
                         title="dove ricevo"
                         href="#dove-ricevo"
-                        class="shadow-3xl dark:shadow-4xl text-xs rounded-md mr-3 px-2 py-1 font-semibold hover:scale-110 transition ease-in-out delay-50 text-gray-500 hover:text-black md:text-base dark:text-white"
+                        class="shadow-xl dark:shadow-3xl text-xs rounded-md mr-3 px-2 py-1 font-semibold hover:scale-110 transition ease-in-out delay-50 text-gray-500 hover:text-black md:text-base dark:text-white"
                         >Dove ricevo ?</a
+                      >
+                      <a
+                        title="contatti"
+                        href="#contatti"
+                        class="shadow-xl dark:shadow-3xl rounded-md mr-3 px-2 py-1 font-semibold text-gray-500 hover:-translate-y-1 hover:scale-110 transition ease-in-out delay-50 hover:text-gray-900 text-xs md:text-base dark:text-white"
+                        >Contatti</a
                       >
                       <div class="flex justify-end items-center space-x-2">
                         <div>
@@ -87,7 +87,7 @@
                               class="w-10 h-6 flex items-center bg-gray-400 rounded-full p-1 cursor-pointer"
                             >
                               <div
-                                class="toggle-dot w-5 h-5 bg-white rounded-full shadow-md transform duration-300 ease-in-out"
+                                class="toggle-dot w-5 h-5 bg-white rounded-full shadow-xl transform duration-300 ease-in-out"
                               ></div>
                             </div>
                           </label>
@@ -126,7 +126,7 @@
                         target="_blank"
                         itemprop="url"
                         href="https://wa.me/393663712597"
-                        class="shadow-3xl dark:shadow-4xl w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white md:py-4 md:text-lg md:px-10 bg-pri_color hover:bg-hover_btn dark:bg-sec_color dark:hover:bg-thi_color"
+                        class="shadow-xl dark:shadow-3xl w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white md:py-4 md:text-lg md:px-10 bg-pri_color hover:bg-hover_btn dark:bg-sec_color dark:hover:bg-thi_color"
                       >
                         Richiedi un appuntamento <i class="fab fa-whatsapp ml-2 text-2xl"></i>
                       </a>
@@ -157,7 +157,7 @@
         <div class="arrow flex justify-center cursor-pointer mt-3 lg:mt-0 text-3xl lg:text-4xl absolute">
           <a title="consulenze" href="#consulenze"
             ><i
-              class="animate-bounce fas fa-chevron-down bg-sec_color dark:bg-white text-white shadow-3xl dark:shadow-4xl rounded-xl py-1 px-2 dark:text-sec_color"
+              class="animate-bounce fas fa-chevron-down bg-sec_color dark:bg-white text-white shadow-xl dark:shadow-3xl rounded-xl py-1 px-2 dark:text-sec_color"
             ></i
           ></a>
         </div>
@@ -166,22 +166,18 @@
 
     <main class="dark:bg-slate-600">
       <section id="dove-ricevo" class="pt-5 rounded-lg bg-pri_color">
-        <div class="lg:text-center">
-          <h2
-            class="text-white text-3xl pl-8 pr-8 pt-12 leading-8 font-extrabold tracking-tight dark:text-slate-500"
-          >
+        <div class="md:text-center pl-5 pt-12 pb-12 container">
+          <h2 class="text-white text-3xl leading-8 font-extrabold tracking-tight dark:text-slate-500">
             Su appuntamento
           </h2>
-          <span
-            class="text-white text-xl pl-8 pr-8 pt-12 leading-8 font-extrabold tracking-tight dark:text-slate-500"
-          >
-            <i class="fa-solid fa-calendar-days"></i> da Lunedì a Sabato
+          <span class="text-white text-xl leading-8 font-extrabold tracking-tight dark:text-slate-500">
+            <i class="fa-solid fa-calendar-days"></i> - Da Lunedì a Sabato
           </span>
         </div>
 
-        <div class="container flex justify-around flex-wrap pt-20 pb-32">
+        <div class="container flex justify-around flex-wrap pt-10 pb-32">
           <div
-            class="animate__animated destra0 max-w-sm rounded-lg overflow-hidden shadow-2xl m-4 hover:-translate-y-1 hover:scale-105 transition ease-in-out delay-100"
+            class="animate__animated destra0 max-w-sm rounded-lg overflow-hidden shadow-xl dark:shadow-3xl m-4"
           >
             <iframe
               title="maps"
@@ -202,7 +198,7 @@
             </div>
           </div>
           <div
-            class="animate__animated sinistra0 max-w-sm rounded-lg overflow-hidden shadow-2xl m-4 hover:-translate-y-1 hover:scale-105 transition ease-in-out delay-100"
+            class="animate__animated sinistra0 max-w-sm rounded-lg overflow-hidden shadow-xl dark:shadow-3xl m-4"
           >
             <iframe
               title="maps"
@@ -229,18 +225,20 @@
       </section>
 
       <section id="consulenze" class="pb-16 pt-5 container">
-        <div class="py-8 bg-white dark:bg-slate-600">
+        <div class="pb-8 bg-white dark:bg-slate-600">
           <h3
-            class="pl-4 services text-sec_color mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl md:text-center"
+            class="pl-5 pt-12 pb-12 services text-sec_color text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl md:text-center"
           >
             Consulenze
           </h3>
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 mt-16 mb-14 flex align-middle flex-col xl:flex-row">
+          <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 mb-14 mt-0 md:mt-10 flex align-middle flex-col xl:flex-row"
+          >
             <div class="lg:text-left lg:px-20 animate__animated destra mt-5">
-              <p itemscope class="max-w-2xl text-2xl text-gray-500 lg:mx-auto dark:text-white">
+              <p itemscope class="max-w-2xl text-2xl text-gray-800 lg:mx-auto dark:text-white">
                 Mi chiamo Ilaria Mezzanotti, sono una Psicologa clinica abilitata e specializzanda presso la
                 <a
-                  class="text-pri_color underline"
+                  class="text-dark_hover underline"
                   itemprop="url"
                   target="_blank"
                   title="La Terapia della Gestalt è una terapia esperienziale, volta all’accrescimento delle potenzialità del sè e delle qualita relazionali; si sviluppa da una concezione olistica, fenomenologica ed esistenzialista dell’essere umano e delle sue relazioni."
@@ -252,8 +250,8 @@
               </p>
             </div>
 
-            <div class="mt-5 animate__animated sinistra">
-              <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-2 md:gap-y-14">
+            <div class="lg:mt-5 mt-14 animate__animated sinistra">
+              <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-2 md:gap-y-14 mt-5">
                 <div class="relative">
                   <dt>
                     <div
@@ -261,7 +259,7 @@
                     >
                       <i class="fa-solid fa-seedling"></i>
                     </div>
-                    <p class="ml-12 text-xl leading-8 font-medium text-gray-900 dark:text-white">
+                    <p class="ml-12 text-xl leading-8 font-medium text-gray-800 dark:text-white">
                       Supporto psicologico adulti e minori
                     </p>
                   </dt>
@@ -274,7 +272,7 @@
                     >
                       <i class="fa-solid fa-parachute-box"></i>
                     </div>
-                    <p class="ml-12 text-xl leading-8 font-medium text-gray-900 dark:text-white">
+                    <p class="ml-12 text-xl leading-8 font-medium text-gray-800 dark:text-white">
                       Prevenzione
                     </p>
                   </dt>
@@ -287,7 +285,7 @@
                     >
                       <i class="fa-solid fa-hand-holding-heart"></i>
                     </div>
-                    <p class="ml-12 text-xl leading-8 font-medium text-gray-900 dark:text-white">
+                    <p class="ml-12 text-xl leading-8 font-medium text-gray-800 dark:text-white">
                       Colloqui di coppia e individuali
                     </p>
                   </dt>
@@ -300,7 +298,7 @@
                     >
                       <i class="fa-solid fa-handshake-simple"></i>
                     </div>
-                    <p class="ml-12 text-xl leading-8 font-medium text-gray-900 dark:text-white">
+                    <p class="ml-12 text-xl leading-8 font-medium text-gray-800 dark:text-white">
                       Gruppi terapeutici
                     </p>
                   </dt>
@@ -313,7 +311,7 @@
                     >
                       <i class="fa-solid fa-hands-holding-child"></i>
                     </div>
-                    <p class="ml-12 text-xl leading-8 font-medium text-gray-900 dark:text-white">
+                    <p class="ml-12 text-xl leading-8 font-medium text-gray-800 dark:text-white">
                       Consulenze educative
                     </p>
                   </dt>
@@ -326,7 +324,7 @@
                     >
                       <i class="fa-solid fa-hand-holding-hand"></i>
                     </div>
-                    <p class="ml-12 text-xl leading-8 font-medium text-gray-900 dark:text-white">
+                    <p class="ml-12 text-xl leading-8 font-medium text-gray-800 dark:text-white">
                       Gestione dello stress
                     </p>
                   </dt>
@@ -343,7 +341,7 @@
         >
           <a title="appuntamento" href="#"
             ><i
-              class="animate-bounce fas fa-chevron-up bg-pri_color text-white shadow-3xl dark:shadow-4xl rounded-xl py-1 px-2 dark:bg-white dark:text-pri_color"
+              class="animate-bounce fas fa-chevron-up bg-pri_color text-white shadow-xl dark:shadow-3xl rounded-xl py-1 px-2 dark:bg-white dark:text-pri_color"
             ></i
           ></a>
         </div>
@@ -354,82 +352,96 @@
       <div class="container pb-5 md:text-left">
         <div class="flex lg:justify-center">
           <h3
-            class="pt-12 pb-6 text-3xl font-extrabold sm:text-4xl mb-5 text-left ml-5 md:ml-0 text-white dark:text-slate-600"
+            class="pt-12 pb-12 text-3xl font-extrabold sm:text-4xl text-left ml-5 md:ml-0 text-white dark:text-slate-600"
           >
             Contatti
           </h3>
         </div>
 
-        <div class="l-r max-w-[75rem] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between">
-          <div class="animate__animated destra2 w-full md:w-auto">
-            <p class="flex items-center md:justify-start mb-4 font-medium">
-              <i class="fas fa-phone-square-alt text-3xl mr-4 text-white dark:text-slate-600"></i>
-              <a
-                title="cellulare"
-                itemprop="url"
-                href="tel:+393663712597"
-                class="hover:scale-110 transition ease-in-out delay-50 shadow-3xl dark:shadow-4xl rounded-md px-2 py-1 text-md text-white dark:text-slate-600"
-              >
-                366 3712597
-              </a>
-            </p>
-            <p class="flex items-center md:justify-start mb-4 font-medium">
-              <i class="fab fa-facebook-square text-3xl mr-4 text-white dark:text-slate-600"></i>
-              <a
-                title="facebook"
-                itemprop="url"
-                href="https://www.facebook.com/ilaria.mezzanotti.3"
-                target="_blank"
-                class="font-medium mr-6 hover:scale-110 transition ease-in-out delay-50 shadow-3xl dark:shadow-4xl rounded-md px-2 py-1 text-md text-white dark:text-slate-600"
-              >
-                Ilaria Mezzanotti
-              </a>
-            </p>
-
-            <p class="flex items-center md:justify-start mb-4 font-medium">
-              <i class="fab fa-linkedin text-3xl mr-4 text-white dark:text-slate-600"></i>
-              <a
-                title="linkedin"
-                itemprop="url"
-                href="https://www.linkedin.com/in/dott-ssa-ilaria-mezzanotti-026551162/"
-                target="_blank"
-                class="font-medium mr-6 hover:scale-110 transition ease-in-out delay-50 shadow-3xl dark:shadow-4xl rounded-md px-2 py-1 text-md text-white dark:text-slate-600"
-              >
-                Dott.ssa Ilaria Mezzanotti
-              </a>
-            </p>
-            <p class="flex items-center md:justify-start mb-4 font-medium">
-              <i class="fab fa-instagram-square text-3xl mr-4 text-white dark:text-slate-600"></i>
-              <a
-                title="instagram"
-                itemprop="url"
-                href="https://www.instagram.com/ilaria.mezzanotti_psicologa/"
-                target="_blank"
-                class="font-medium mr-6 hover:scale-110 transition ease-in-out delay-50 shadow-3xl dark:shadow-4xl rounded-md px-2 py-1 text-md text-white dark:text-slate-600"
-              >
-                ilaria.mezzanotti_psicologa
-              </a>
-            </p>
-            <p class="flex items-center md:justify-start mb-4 font-medium">
-              <i class="fas fa-envelope-square text-3xl mr-4 text-white dark:text-slate-600"></i>
-              <a
-                itemprop="url"
-                title="email"
-                href="mailto:ilaria.mezzanotti@gmail.com"
-                class="hover:scale-110 transition ease-in-out delay-50 shadow-3xl dark:shadow-4xl rounded-md px-2 py-1 text-md text-white dark:text-slate-600"
-              >
-                ilaria.mezzanotti@gmail.com
-              </a>
-            </p>
+        <div
+          class="l-r max-w-[75rem] mx-auto py-8 px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between"
+        >
+          <div class="animate__animated destra2 w-full md:w-auto lg:flex pt-5">
+            <div class="w-52 mb-5">
+              <img
+                class="h-12 w-12 dark:rounded-lg"
+                title="Ilaria Mezzanotti"
+                src="./assets/img/dark_logo_.webp"
+                alt="logo_sito"
+              />
+            </div>
+            <div>
+              <p class="flex items-center md:justify-start mb-4 font-medium">
+                <i class="fas fa-phone-square-alt text-3xl mr-4 text-white dark:text-slate-600"></i>
+                <a
+                  title="cellulare"
+                  itemprop="url"
+                  href="tel:+393663712597"
+                  class="hover:scale-110 transition ease-in-out delay-50 shadow-xl dark:shadow-3xl rounded-md px-2 py-1 text-sm text-white dark:text-slate-600"
+                >
+                  366 3712597
+                </a>
+              </p>
+              <p class="flex items-center md:justify-start mb-4 font-medium">
+                <i class="fab fa-facebook-square text-3xl mr-4 text-white dark:text-slate-600"></i>
+                <a
+                  title="facebook"
+                  itemprop="url"
+                  href="https://www.facebook.com/ilaria.mezzanotti.3"
+                  target="_blank"
+                  class="font-medium mr-6 hover:scale-110 transition ease-in-out delay-50 shadow-xl dark:shadow-3xl rounded-md px-2 py-1 text-sm text-white dark:text-slate-600"
+                >
+                  Ilaria Mezzanotti
+                </a>
+              </p>
+              <p class="flex items-center md:justify-start mb-4 font-medium">
+                <i class="fab fa-linkedin text-3xl mr-4 text-white dark:text-slate-600"></i>
+                <a
+                  title="linkedin"
+                  itemprop="url"
+                  href="https://www.linkedin.com/in/dott-ssa-ilaria-mezzanotti-026551162/"
+                  target="_blank"
+                  class="font-medium mr-6 hover:scale-110 transition ease-in-out delay-50 shadow-xl dark:shadow-3xl rounded-md px-2 py-1 text-sm text-white dark:text-slate-600"
+                >
+                  Dott.ssa Ilaria Mezzanotti
+                </a>
+              </p>
+            </div>
+            <div>
+              <p class="flex items-center md:justify-start mb-4 font-medium">
+                <i class="fab fa-instagram-square text-3xl mr-4 text-white dark:text-slate-600"></i>
+                <a
+                  title="instagram"
+                  itemprop="url"
+                  href="https://www.instagram.com/ilaria.mezzanotti_psicologa/"
+                  target="_blank"
+                  class="font-medium mr-6 hover:scale-110 transition ease-in-out delay-50 shadow-xl dark:shadow-3xl rounded-md px-2 py-1 text-sm text-white dark:text-slate-600"
+                >
+                  ilaria.mezzanotti_psicologa
+                </a>
+              </p>
+              <p class="flex items-center md:justify-start mb-4 font-medium">
+                <i class="fas fa-envelope-square text-3xl mr-4 text-white dark:text-slate-600"></i>
+                <a
+                  itemprop="url"
+                  title="email"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ilaria.mezzanotti@gmail.com"
+                  target="_blank"
+                  class="hover:scale-110 transition ease-in-out delay-50 shadow-xl dark:shadow-3xl rounded-md px-2 py-1 text-sm text-white dark:text-slate-600"
+                >
+                  ilaria.mezzanotti@gmail.com
+                </a>
+              </p>
+            </div>
           </div>
 
-          <div class="animate__animated sinistra2 right mt-10 md:mt-6 shadow-3xl dark:shadow-4xl">
+          <div class="animate__animated sinistra2 right mt-10 md:mt-6 shadow-xl dark:shadow-3xl">
             <div class="mr-3 mt-30 w-full flex justify-center align-middle">
               <!-- SnapWidget -->
               <iframe
                 title="instagram"
                 src="https://snapwidget.com/embed/979391"
-                class="snapwidget-widget"
+                class="snapwidget-widget rounded-lg"
                 allowtransparency="true"
                 frameborder="0"
                 scrolling="no"
@@ -461,7 +473,7 @@
         checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark')
       }
       const autoTheme = () => {
-        if (hour >= 21) {
+        if (hour >= 21 && hour <= 7) {
           checkbox.checked = true
           html.classList.add('dark')
         } else {
@@ -473,26 +485,35 @@
       const observer1 = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('animate__slideInLeft')
+            entry.target.classList.add('animate__fadeInLeft')
           }
         })
       })
 
       observer1.observe(document.querySelector('.destra'))
-      // observer1.observe(document.querySelector('.destra0'))
+
       observer1.observe(document.querySelector('.destra1'))
       // observer1.observe(document.querySelector('.destra2'))
       const observer2 = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('animate__slideInRight')
+            entry.target.classList.add('animate__fadeInRight')
           }
         })
       })
 
       observer2.observe(document.querySelector('.sinistra'))
-      // observer2.observe(document.querySelector('.sinistra0'))
-      observer2.observe(document.querySelector('.sinistra1'))
+
+      const observer3 = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate__pulse')
+          }
+        })
+      })
+      observer3.observe(document.querySelector('.destra0'))
+      observer3.observe(document.querySelector('.sinistra1'))
+      observer3.observe(document.querySelector('.sinistra0'))
       // observer2.observe(document.querySelector('.sinistra2'))
       autoTheme()
       checkbox.addEventListener('click', toggleDark)
