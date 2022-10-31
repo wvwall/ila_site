@@ -909,6 +909,12 @@ html {
 .pr-1 {
   padding-right: 0.25rem;
 }
+.pr-4 {
+  padding-right: 1rem;
+}
+.pr-2 {
+  padding-right: 0.5rem;
+}
 .text-left {
   text-align: left;
 }
