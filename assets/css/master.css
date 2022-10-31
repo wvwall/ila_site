@@ -510,6 +510,22 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -648,6 +664,9 @@ html {
 .w-44 {
   width: 11rem;
 }
+.w-40 {
+  width: 10rem;
+}
 .max-w-\[75rem\] {
   max-width: 75rem;
 }
@@ -734,6 +753,13 @@ html {
 }
 .rounded-xl {
   border-radius: 0.75rem;
+}
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+.rounded-l {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
 }
 .border {
   border-width: 1px;
@@ -980,6 +1006,10 @@ html {
 .text-dark_hover {
   --tw-text-opacity: 1;
   color: rgb(199 75 80 / var(--tw-text-opacity));
+}
+.text-dark_pri {
+  --tw-text-opacity: 1;
+  color: rgb(227 99 112 / var(--tw-text-opacity));
 }
 .underline {
   -webkit-text-decoration-line: underline;
@@ -1232,6 +1262,9 @@ html {
   .sm\:pl-0 {
     padding-left: 0px;
   }
+  .sm\:text-left {
+    text-align: left;
+  }
   .sm\:text-center {
     text-align: center;
   }
@@ -1299,6 +1332,9 @@ html {
   }
   .md\:justify-start {
     justify-content: flex-start;
+  }
+  .md\:justify-center {
+    justify-content: center;
   }
   .md\:gap-x-2 {
     -moz-column-gap: 0.5rem;
