@@ -501,10 +501,6 @@ html {
   margin-left: 1rem;
   margin-right: 1rem;
 }
-.mx-16 {
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -520,8 +516,8 @@ html {
 .ml-2 {
   margin-left: 0.5rem;
 }
-.mt-20 {
-  margin-top: 5rem;
+.mt-16 {
+  margin-top: 4rem;
 }
 .mb-2 {
   margin-bottom: 0.5rem;
@@ -534,9 +530,6 @@ html {
 }
 .ml-12 {
   margin-left: 3rem;
-}
-.mr-7 {
-  margin-right: 1.75rem;
 }
 .ml-5 {
   margin-left: 1.25rem;
@@ -555,9 +548,6 @@ html {
 }
 .mt-10 {
   margin-top: 2.5rem;
-}
-.mt-16 {
-  margin-top: 4rem;
 }
 .block {
   display: block;
@@ -804,9 +794,6 @@ html {
 }
 .pb-5 {
   padding-bottom: 1.25rem;
-}
-.pt-8 {
-  padding-top: 2rem;
 }
 .text-left {
   text-align: left;
@@ -1205,17 +1192,13 @@ html {
     margin-left: 0px;
     margin-right: 0px;
   }
-  .lg\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .lg\:mx-16 {
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
   .lg\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
+  }
+  .lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
   .lg\:mt-20 {
     margin-top: 5rem;
