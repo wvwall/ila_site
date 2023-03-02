@@ -482,7 +482,7 @@
         checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark')
       }
       const autoTheme = () => {
-        if (hour >= 21 || hour <= 7) {
+        if (hour >= 23 || hour <= 7) {
           checkbox.checked = true
           html.classList.add('dark')
         } else {
