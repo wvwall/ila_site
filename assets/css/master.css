@@ -911,14 +911,14 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 #toggle ~ label div.toggle-dot {
-  background-image: url("../img/moon.webp");
+  background-image: url("../img/sunny.webp");
   background-size: cover;
 }
 
 #toggle:checked ~ label div.toggle-dot {
   --tw-translate-x: 0.75rem;
   transform: var(--tw-transform);
-  background-image: url("../img/sunny.webp");
+  background-image: url("../img/moon.webp");
   background-size: cover;
 }
 
