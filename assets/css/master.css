@@ -1237,13 +1237,9 @@ html {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  .lg\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-  .lg\:px-28 {
-    padding-left: 7rem;
-    padding-right: 7rem;
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
   .lg\:pb-28 {
     padding-bottom: 7rem;
@@ -1271,10 +1267,6 @@ html {
   }
   .xl\:flex-row {
     flex-direction: row;
-  }
-  .xl\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
   .xl\:pb-32 {
     padding-bottom: 8rem;
