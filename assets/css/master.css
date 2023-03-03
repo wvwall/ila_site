@@ -5,11 +5,6 @@
   /* position the left edge of the element at the middle of the parent */
   transform: translate(-50%, -50%);
 }
-@media screen and (max-width: 1023px) {
-  #arrow .arrow {
-    top: 85vh;
-  }
-}
 
 #contatti .right {
   height: 180px;
@@ -445,31 +440,37 @@ html {
   width: 100%;
 }
 @media (min-width: 320px) {
+
   .container {
     max-width: 320px;
   }
 }
 @media (min-width: 480px) {
+
   .container {
     max-width: 480px;
   }
 }
 @media (min-width: 768px) {
+
   .container {
     max-width: 768px;
   }
 }
 @media (min-width: 976px) {
+
   .container {
     max-width: 976px;
   }
 }
 @media (min-width: 1023px) {
+
   .container {
     max-width: 1023px;
   }
 }
 @media (min-width: 1440px) {
+
   .container {
     max-width: 1440px;
   }
@@ -479,6 +480,9 @@ html {
 }
 .relative {
   position: relative;
+}
+.sticky {
+  position: sticky;
 }
 .inset-y-0 {
   top: 0px;
@@ -623,10 +627,12 @@ html {
   transform: var(--tw-transform);
 }
 @keyframes bounce {
+
   0%, 100% {
     transform: translateY(-25%);
     animation-timing-function: cubic-bezier(0.8,0,1,1);
   }
+
   50% {
     transform: none;
     animation-timing-function: cubic-bezier(0,0,0.2,1);
@@ -1027,55 +1033,71 @@ html {
 }
 
 @media (min-width: 480px) {
+
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
   }
+
   .sm\:mt-12 {
     margin-top: 3rem;
   }
+
   .sm\:mt-5 {
     margin-top: 1.25rem;
   }
+
   .sm\:mt-8 {
     margin-top: 2rem;
   }
+
   .sm\:flex {
     display: flex;
   }
+
   .sm\:h-10 {
     height: 2.5rem;
   }
+
   .sm\:h-8 {
     height: 2rem;
   }
+
   .sm\:max-w-xl {
     max-width: 36rem;
   }
+
   .sm\:justify-center {
     justify-content: center;
   }
+
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+
   .sm\:pb-16 {
     padding-bottom: 4rem;
   }
+
   .sm\:pl-0 {
     padding-left: 0px;
   }
+
   .sm\:text-center {
     text-align: center;
   }
+
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
   }
+
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1083,94 +1105,121 @@ html {
 }
 
 @media (min-width: 768px) {
+
   .md\:ml-10 {
     margin-left: 2.5rem;
   }
+
   .md\:mt-16 {
     margin-top: 4rem;
   }
+
   .md\:mt-5 {
     margin-top: 1.25rem;
   }
+
   .md\:mt-10 {
     margin-top: 2.5rem;
   }
+
   .md\:ml-0 {
     margin-left: 0px;
   }
+
   .md\:mt-6 {
     margin-top: 1.5rem;
   }
+
   .md\:block {
     display: block;
   }
+
   .md\:grid {
     display: grid;
   }
+
   .md\:w-auto {
     width: auto;
   }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
   .md\:flex-row {
     flex-direction: row;
   }
+
   .md\:justify-start {
     justify-content: flex-start;
   }
+
   .md\:justify-center {
     justify-content: center;
   }
+
   .md\:gap-x-2 {
     -moz-column-gap: 0.5rem;
          column-gap: 0.5rem;
   }
+
   .md\:gap-y-14 {
     row-gap: 3.5rem;
   }
+
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2rem * var(--tw-space-x-reverse));
     margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
   }
+
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
+
   .md\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
+
   .md\:pb-20 {
     padding-bottom: 5rem;
   }
+
   .md\:pr-4 {
     padding-right: 1rem;
   }
+
   .md\:text-left {
     text-align: left;
   }
+
   .md\:text-center {
     text-align: center;
   }
+
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
   }
+
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -1178,99 +1227,128 @@ html {
 }
 
 @media (min-width: 976px) {
+
   .lg\:absolute {
     position: absolute;
   }
+
   .lg\:inset-y-0 {
     top: 0px;
     bottom: 0px;
   }
+
   .lg\:right-0 {
     right: 0px;
   }
+
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
   }
+
   .lg\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
   }
+
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
   }
+
   .lg\:mt-20 {
     margin-top: 5rem;
   }
+
   .lg\:mt-0 {
     margin-top: 0px;
   }
+
   .lg\:block {
     display: block;
   }
+
   .lg\:flex {
     display: flex;
   }
+
   .lg\:h-full {
     height: 100%;
   }
+
   .lg\:w-full {
     width: 100%;
   }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
+
   .lg\:max-w-2xl {
     max-width: 42rem;
   }
+
   .lg\:flex-grow-0 {
     flex-grow: 0;
   }
+
   .lg\:justify-start {
     justify-content: flex-start;
   }
+
   .lg\:justify-center {
     justify-content: center;
   }
+
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
   .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
+
   .lg\:pb-28 {
     padding-bottom: 7rem;
   }
+
   .lg\:text-left {
     text-align: left;
   }
 }
 
 @media (min-width: 1023px) {
+
   .xl\:mt-28 {
     margin-top: 7rem;
   }
+
   .xl\:mt-0 {
     margin-top: 0px;
   }
+
   .xl\:mr-0 {
     margin-right: 0px;
   }
+
   .xl\:inline {
     display: inline;
   }
+
   .xl\:h-screen {
     height: 100vh;
   }
+
   .xl\:flex-row {
     flex-direction: row;
   }
+
   .xl\:pb-32 {
     padding-bottom: 8rem;
   }
+
   .xl\:pb-10 {
     padding-bottom: 2.5rem;
   }
