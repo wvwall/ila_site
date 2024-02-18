@@ -488,9 +488,6 @@ html {
 .m-4 {
   margin: 1rem;
 }
-.m-6 {
-  margin: 1.5rem;
-}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -603,9 +600,6 @@ html {
 }
 .max-w-2xl {
   max-width: 42rem;
-}
-.max-w-xs {
-  max-width: 20rem;
 }
 .flex-shrink-0 {
   flex-shrink: 0;
@@ -777,9 +771,6 @@ html {
 .pb-12 {
   padding-bottom: 3rem;
 }
-.pt-10 {
-  padding-top: 2.5rem;
-}
 .pb-32 {
   padding-bottom: 8rem;
 }
@@ -791,6 +782,9 @@ html {
 }
 .pb-5 {
   padding-bottom: 1.25rem;
+}
+.pb-20 {
+  padding-bottom: 5rem;
 }
 .text-left {
   text-align: left;
@@ -1188,6 +1182,10 @@ html {
     padding-right: 1rem;
   }
 
+  .md\:pb-12 {
+    padding-bottom: 3rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -1303,6 +1301,10 @@ html {
 
   .lg\:pb-28 {
     padding-bottom: 7rem;
+  }
+
+  .lg\:pb-12 {
+    padding-bottom: 3rem;
   }
 
   .lg\:text-left {
