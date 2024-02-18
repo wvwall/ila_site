@@ -488,6 +488,9 @@ html {
 .m-4 {
   margin: 1rem;
 }
+.m-6 {
+  margin: 1.5rem;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -511,11 +514,14 @@ html {
 .ml-2 {
   margin-left: 0.5rem;
 }
-.mt-16 {
-  margin-top: 4rem;
+.mt-10 {
+  margin-top: 2.5rem;
 }
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+.mt-16 {
+  margin-top: 4rem;
 }
 .mb-14 {
   margin-bottom: 3.5rem;
@@ -541,15 +547,6 @@ html {
 .mt-6 {
   margin-top: 1.5rem;
 }
-.mb-4 {
-  margin-bottom: 1rem;
-}
-.mt-8 {
-  margin-top: 2rem;
-}
-.mt-10 {
-  margin-top: 2.5rem;
-}
 .block {
   display: block;
 }
@@ -558,9 +555,6 @@ html {
 }
 .hidden {
   display: none;
-}
-.h-auto {
-  height: auto;
 }
 .h-full {
   height: 100%;
@@ -609,6 +603,9 @@ html {
 }
 .max-w-2xl {
   max-width: 42rem;
+}
+.max-w-xs {
+  max-width: 20rem;
 }
 .flex-shrink-0 {
   flex-shrink: 0;
@@ -1132,10 +1129,6 @@ html {
     display: grid;
   }
 
-  .md\:h-screen {
-    height: 100vh;
-  }
-
   .md\:w-auto {
     width: auto;
   }
@@ -1274,10 +1267,6 @@ html {
     height: 100%;
   }
 
-  .lg\:h-screen {
-    height: 100vh;
-  }
-
   .lg\:w-full {
     width: 100%;
   }
@@ -1337,14 +1326,6 @@ html {
 
   .xl\:inline {
     display: inline;
-  }
-
-  .xl\:h-screen {
-    height: 100vh;
-  }
-
-  .xl\:w-screen {
-    width: 100vw;
   }
 
   .xl\:flex-row {
