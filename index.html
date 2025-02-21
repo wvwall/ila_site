@@ -500,15 +500,10 @@
         </div>
       </div>
 
-      <div class="bg-sec_color text-center p-2 rounded-lg">
-        <a
-          title="linkedin"
-          itemprop="url"
-          class="text-white dark:text-slate-600 font-semibold"
-          target="_blank"
-          href="https://bento.me/wvwall"
-          ><small> < @wvwall /> </small></a
-        >
+      <div class="bg-sec_color text-center p-2 rounded-b-lg">
+        <small class="text-white">
+          © <span id="year"></span> Ilaria Mezzanotti. Tutti i diritti riservati.
+        </small>
       </div>
     </footer>
 
@@ -516,6 +511,8 @@
       const checkbox = document.querySelector('#toggle')
       const html = document.querySelector('html')
       const hour = new Date().getHours()
+      const currentYear = new Date().getFullYear()
+      document.querySelector('#year').textContent = currentYear
 
       const toggleDark = () => {
         checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark')
