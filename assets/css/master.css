@@ -678,6 +678,10 @@ html {
 .rounded-xl {
   border-radius: 0.75rem;
 }
+.rounded-b-lg {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
 .border {
   border-width: 1px;
 }
@@ -771,8 +775,8 @@ html {
 .pb-12 {
   padding-bottom: 3rem;
 }
-.pb-32 {
-  padding-bottom: 8rem;
+.pb-24 {
+  padding-bottom: 6rem;
 }
 .pb-10 {
   padding-bottom: 2.5rem;
@@ -782,15 +786,6 @@ html {
 }
 .pb-5 {
   padding-bottom: 1.25rem;
-}
-.pb-20 {
-  padding-bottom: 5rem;
-}
-.pb-28 {
-  padding-bottom: 7rem;
-}
-.pb-24 {
-  padding-bottom: 6rem;
 }
 .text-left {
   text-align: left;
@@ -1186,10 +1181,6 @@ html {
 
   .md\:pr-4 {
     padding-right: 1rem;
-  }
-
-  .md\:pb-12 {
-    padding-bottom: 3rem;
   }
 
   .md\:text-left {
