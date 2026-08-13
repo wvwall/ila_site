@@ -1,0 +1,120 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer
+  id="contatti"
+  class="mx-4 mt-16 text-center text-black rounded-lg shadow-3xl dark:shadow-3xl lg:text-left bg-thi_color dark:bg-sec_color lg:mx-20">
+  <div class="container pb-5 md:text-left">
+    <div class="flex md:justify-center">
+      <h2 class="pt-12 pb-12 ml-5 text-3xl font-extrabold text-left text-white sm:text-4xl md:ml-0 dark:text-slate-600">
+        Contatti
+      </h2>
+    </div>
+
+    <div class="l-r max-w-[75rem] mx-auto py-8 px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between">
+      <div class="w-full animate__animated destra2 md:w-auto lg:flex">
+        <div class="mb-5 w-28 grayscale">
+          <img
+            class="w-12 h-12 dark:rounded-lg"
+            title="Ilaria Mezzanotti"
+            src="/assets/img/dark_logo_.webp"
+            width="499"
+            height="501"
+            alt="Logo Dott.ssa Ilaria Mezzanotti"
+          />
+        </div>
+        <div>
+          <p class="flex items-center mb-5 font-medium md:justify-start">
+            <i class="mr-4 text-3xl text-white fas fa-phone-square-alt dark:text-slate-600" aria-hidden="true"></i>
+            <a
+              title="cellulare"
+              itemprop="url"
+              href="tel:+393663712597"
+              class="px-2 py-1 text-sm text-white transition ease-in-out rounded-md hover:scale-110 delay-50 shadow-3xl dark:shadow-3xl dark:text-slate-600">
+              366 3712597
+            </a>
+          </p>
+          <p class="flex items-center mb-5 font-medium md:justify-start">
+            <i class="mr-4 text-3xl text-white fab fa-facebook-square dark:text-slate-600" aria-hidden="true"></i>
+            <a
+              title="facebook"
+              itemprop="url"
+              href="https://www.facebook.com/ilaria.mezzanotti.3"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-2 py-1 mr-6 text-sm font-medium text-white transition ease-in-out rounded-md hover:scale-110 delay-50 shadow-3xl dark:shadow-3xl dark:text-slate-600">
+              Ilaria Mezzanotti
+            </a>
+          </p>
+          <p class="flex items-center mb-5 font-medium md:justify-start">
+            <i class="mr-4 text-3xl text-white fab fa-linkedin dark:text-slate-600" aria-hidden="true"></i>
+            <a
+              title="linkedin"
+              itemprop="url"
+              href="https://www.linkedin.com/in/dott-ssa-ilaria-mezzanotti-026551162/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-2 py-1 mr-6 text-sm font-medium text-white transition ease-in-out rounded-md hover:scale-110 delay-50 shadow-3xl dark:shadow-3xl dark:text-slate-600">
+              Dott.ssa Ilaria Mezzanotti
+            </a>
+          </p>
+        </div>
+        <div>
+          <p class="flex items-center mb-5 font-medium md:justify-start">
+            <i class="mr-4 text-3xl text-white fab fa-instagram-square dark:text-slate-600" aria-hidden="true"></i>
+            <a
+              title="instagram"
+              itemprop="url"
+              href="https://www.instagram.com/ilaria.mezzanotti_psicologa/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-2 py-1 mr-6 text-sm font-medium text-white transition ease-in-out rounded-md hover:scale-110 delay-50 shadow-3xl dark:shadow-3xl dark:text-slate-600">
+              ilaria.mezzanotti_psicologa
+            </a>
+          </p>
+          <p class="flex items-center mb-5 font-medium md:justify-start">
+            <i class="mr-4 text-3xl text-white fas fa-envelope-square dark:text-slate-600" aria-hidden="true"></i>
+            <a
+              itemprop="url"
+              title="email"
+              href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ilaria.mezzanotti@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-2 py-1 text-sm text-white transition ease-in-out rounded-md hover:scale-110 delay-50 shadow-3xl dark:shadow-3xl dark:text-slate-600">
+              ilaria.mezzanotti@gmail.com
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-2 text-center bg-sec_color">
+    <small class="text-white">
+      © <span id="year">{currentYear}</span> Ilaria Mezzanotti. Tutti i diritti riservati.
+    </small>
+  </div>
+
+  <div class="px-6 pt-2 pb-4 text-center rounded-b-lg bg-sec_color">
+    <button
+      id="cookieToggle"
+      class="flex items-center justify-center gap-1 mx-auto cursor-pointer bg-transparent border-0 text-white/80 hover:text-white text-[10px] leading-relaxed p-1 transition-colors duration-300"
+      aria-expanded="false"
+      aria-controls="cookieText">
+      <i class="fa-solid fa-cookie-bite" aria-hidden="true"></i>
+      <span>Cookie Policy</span>
+      <i
+        id="cookieChevron"
+        class="fa-solid fa-chevron-down transition-transform duration-300 ease-in-out"
+        aria-hidden="true"></i>
+    </button>
+    <div id="cookieText" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0">
+      <p class="text-[10px] leading-relaxed text-white/80 max-w-5xl mx-auto">
+        Questo sito utilizza esclusivamente cookie tecnici necessari al funzionamento e non raccoglie dati
+        personali degli utenti. <br />Non vengono utilizzati cookie di profilazione né strumenti di tracciamento
+        di terze parti.
+      </p>
+    </div>
+  </div>
+</footer>
