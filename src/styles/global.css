@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+#toggle ~ label div.toggle-dot {
+  background-image: url("/assets/img/sunny.webp");
+  background-size: cover;
+}
+#toggle:checked ~ label div.toggle-dot {
+  @apply translate-x-3;
+  background-image: url("/assets/img/moon.webp");
+  background-size: cover;
+}
+
+/* Self-hosted replacement for the animate.css reveal effects previously
+   loaded from a third-party CDN; same easing/duration/keyframes so the
+   on-load and on-scroll reveals look identical. */
+@media (prefers-reduced-motion: no-preference) {
+  .animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translate3d(-40px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translate3d(40px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .animate__fadeInLeft {
+    animation-name: fadeInLeft;
+  }
+  .animate__fadeInRight {
+    animation-name: fadeInRight;
+  }
+}

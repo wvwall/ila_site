@@ -1,0 +1,49 @@
+---
+const title = "Dott.ssa Ilaria Mezzanotti | Psicologa e Psicoterapeuta";
+const description =
+  "Dott.ssa Ilaria Mezzanotti, Psicologa clinica abilitata e Psicoterapeutica specializzata presso la Scuola Gestalt di Torino. Riceve su appuntamento a Leinì, Robassomero e Cuorgnè o tramite consulenze online.";
+const keywords =
+  "Ilaria Mezzanotti, Psicologa, Psicoterapeuta, Gestalt, Piemonte, Ciriè, Leinì, Torino, Cuorgnè, Robassomero, Psicologia, Psicoterapia";
+const ogTitle = "Dott.ssa Ilaria Mezzanotti | Psicologa e Psicoterapeuta";
+const ogDescription =
+  "Supporto psicologico per adulti e minori, colloqui di coppia, gruppi terapeutici e percorsi di crescita personale. Su appuntamento o online.";
+
+const SITE_URL = "https://www.ilariamezzanotti.it";
+const currentUrl = Astro.url.href;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Psychologist",
+  name: "Dott.ssa Ilaria Mezzanotti",
+  areaServed: ["Leinì", "Robassomero", "Cuorgnè", "Ciriè", "Torino", "Piemonte"],
+  image: `${SITE_URL}/assets/img/logo.webp`,
+  url: currentUrl,
+  inLanguage: "it-IT",
+  email: "ilaria.mezzanotti@gmail.com",
+  telephone: "+39 366 3712597",
+  sameAs: [
+    "https://www.facebook.com/ilaria.mezzanotti.3",
+    "https://www.instagram.com/ilaria.mezzanotti_psicologa/",
+    "https://www.linkedin.com/in/dott-ssa-ilaria-mezzanotti-026551162/",
+  ],
+  description:
+    "Psicologa clinica abilitata e Psicoterapeutica specializzata presso la Scuola Gestalt di Torino. Supporto psicologico adulti e minori, colloqui di coppia, gruppi terapeutici e consulenze educative.",
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="keywords" content={keywords} />
+<meta name="description" content={description} />
+<meta property="og:title" content={ogTitle} />
+<meta property="og:description" content={ogDescription} />
+<meta property="og:image" content={`${SITE_URL}/assets/img/anteprima.webp`} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={currentUrl} />
+<meta property="og:locale" content="it_IT" />
+<link rel="canonical" href={currentUrl} />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<title>{title}</title>

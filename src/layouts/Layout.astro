@@ -1,0 +1,36 @@
+---
+import "@fontsource/poppins/300.css";
+import "@fontsource/poppins/400.css";
+import "@fontsource/poppins/500.css";
+import "@fontsource/poppins/600.css";
+import "@fontsource/poppins/300-italic.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "../styles/global.css";
+import SeoHead from "../components/SeoHead.astro";
+import Hero from "../components/Hero.astro";
+import DoveRicevo from "../components/DoveRicevo.astro";
+import Consulenze from "../components/Consulenze.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="it-IT" class="dark">
+  <head>
+    <SeoHead />
+  </head>
+
+  <body class="dark:bg-slate-600">
+    <Hero />
+
+    <main class="dark:bg-slate-600">
+      <DoveRicevo />
+      <Consulenze />
+    </main>
+
+    <Footer />
+
+    <script is:inline src="/assets/js/theme-toggle.js"></script>
+    <script is:inline src="/assets/js/reveal.js"></script>
+    <script is:inline src="/assets/js/cookie-toggle.js"></script>
+  </body>
+</html>

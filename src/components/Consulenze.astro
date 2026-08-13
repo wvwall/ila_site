@@ -1,0 +1,55 @@
+---
+const servizi = [
+  { icon: "fa-seedling", label: "Supporto psicologico adulti e minori" },
+  { icon: "fa-parachute-box", label: "Prevenzione" },
+  { icon: "fa-hand-holding-heart", label: "Colloqui di coppia e individuali" },
+  { icon: "fa-handshake-simple", label: "Gruppi terapeutici" },
+  { icon: "fa-hands-holding-child", label: "Consulenze educative" },
+  { icon: "fa-hand-holding-hand", label: "Gestione dello stress" },
+  { icon: "fa-seedling", label: "Percorsi di crescita personale" },
+];
+---
+
+<section id="consulenze" class="container pb-16 mt-16">
+  <div class="bg-white dark:bg-slate-600">
+    <h2
+      class="pb-12 pl-5 text-3xl font-extrabold leading-8 tracking-tight services text-sec_color sm:text-4xl md:text-center">
+      Consulenze
+    </h2>
+    <div class="flex flex-col px-4 mx-auto mt-0 align-middle max-w-7xl sm:px-6 mb-14 md:mt-10 xl:flex-row">
+      <div class="mt-5 lg:text-left lg:px-10 animate__animated destra">
+        <p itemscope class="max-w-2xl text-2xl text-gray-800 lg:mx-auto dark:text-white">
+          Mi chiamo Ilaria Mezzanotti, sono una Psicologa clinica abilitata e Psicoteraupetica, specializzata
+          presso la
+          <a
+            class="underline text-dark_pri"
+            itemprop="url"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="La Terapia della Gestalt è una terapia esperienziale, volta all'accrescimento delle potenzialità del sè e delle qualita relazionali; si sviluppa da una concezione olistica, fenomenologica ed esistenzialista dell'essere umano e delle sue relazioni."
+            href="https://www.scuolapsicoterapiagestalt.it/">Scuola Gestalt di Torino</a
+          >. <br /><br />
+          Attualmente ricevo, su appuntamento, presso gli studi di Robassero, Leinì e Cuorgnè o tramite consulenze
+          online.
+        </p>
+      </div>
+
+      <div class="flex justify-center xl:mt-0 mt-14 animate__animated sinistra lg:px-10">
+        <dl class="mt-5 space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-2 md:gap-y-14">
+          {
+            servizi.map((s) => (
+              <div class="relative">
+                <dt>
+                  <div class="absolute flex items-center justify-center w-8 h-8 text-white rounded-md bg-hover_btn dark:bg-pri_color">
+                    <i class={`fa-solid ${s.icon}`} aria-hidden="true" />
+                  </div>
+                  <p class="ml-12 text-xl font-medium leading-8 text-gray-800 dark:text-white">{s.label}</p>
+                </dt>
+              </div>
+            ))
+          }
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>

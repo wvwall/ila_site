@@ -2,6 +2,13 @@
 
 https://www.ilariamezzanotti.it/
 
-### build css
+Sito di Dott.ssa Ilaria Mezzanotti, Psicologa e Psicoterapeuta, costruito con [Astro](https://astro.build/) e Tailwind CSS.
 
-npx tailwindcss -i assets/css/master.css -o assets/css/build.css --minify
+## Comandi
+
+| Comando           | Azione                                       |
+| :----------------- | :-------------------------------------------- |
+| `npm install`      | Installa le dipendenze                        |
+| `npm run dev`      | Avvia il server di sviluppo su `localhost:4321` |
+| `npm run build`    | Compila il sito statico in `./dist/`          |
+| `npm run preview`  | Anteprima della build in locale               |

@@ -1,29 +1,30 @@
 {
-  "name": "webportfolio",
+  "name": "ila_site",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wvwall/webportfolio.git"
+    "url": "git+https://github.com/wvwall/ila_site.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wvwall/webportfolio/issues"
+    "url": "https://github.com/wvwall/ila_site/issues"
   },
-  "homepage": "https://github.com/wvwall/webportfolio#readme",
-  "devDependencies": {
-    "laravel-mix": "^6.0.49",
-    "sass": "^1.34.0",
-    "sass-loader": "^11.0.1",
-    "tailwindcss": "^3.0.7"
-  },
+  "homepage": "https://github.com/wvwall/ila_site#readme",
   "dependencies": {
-    "mix-tailwindcss": "^1.3.0"
+    "@astrojs/tailwind": "^6.0.2",
+    "@fontsource/poppins": "^5.2.5",
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "astro": "^5.18.2",
+    "tailwindcss": "^3.0.7"
   }
 }
