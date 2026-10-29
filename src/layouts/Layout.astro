@@ -7,6 +7,7 @@ import "@fontsource/poppins/300-italic.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "../styles/global.css";
 import SeoHead from "../components/SeoHead.astro";
+import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import DoveRicevo from "../components/DoveRicevo.astro";
 import Consulenze from "../components/Consulenze.astro";
@@ -14,23 +15,27 @@ import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
-<html lang="it-IT">
+<html lang="it-IT" class="scroll-smooth scroll-pt-[98px] [color-scheme:light] motion-reduce:scroll-auto">
   <head>
     <SeoHead />
   </head>
 
-  <body class="dark:bg-slate-600">
-    <Hero />
+  <body id="home" class="bg-white pb-6 font-sans text-base leading-[1.6] text-brand-ink [&_a]:transition-[color,background-color,transform] [&_a]:duration-[180ms] [&_a:focus-visible]:outline [&_a:focus-visible]:outline-[3px] [&_a:focus-visible]:outline-brand-ink [&_a:focus-visible]:outline-offset-[5px] [&_p]:[text-wrap:pretty] [&_a]:[-webkit-tap-highlight-color:transparent] [&_summary]:[-webkit-tap-highlight-color:transparent] motion-reduce:[&_*]:!transition-none">
+    <a class="fixed left-3 top-3 z-[60] -translate-y-[160%] bg-white px-5 py-3 focus:translate-y-0" href="#main">Vai al contenuto</a>
+    <Header />
 
-    <main class="dark:bg-slate-600">
+    <main id="main">
+      <Hero />
       <DoveRicevo />
       <Consulenze />
+      <div id="arrow_" class="flex justify-end px-panel pb-6 pt-8 tablet:pb-8 tablet:pt-12 [&>a]:inline-flex [&>a]:min-h-11 [&>a]:items-center [&>a]:gap-3 [&>a]:text-sm [&>a]:leading-[1.6] [&>a:hover]:-translate-y-0.5 [&>a:hover]:text-brand-green mx-auto w-shell">
+        <a href="#home" aria-label="Torna all’inizio">
+          Torna all’inizio <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+        </a>
+      </div>
     </main>
 
     <Footer />
-
-    <script is:inline src="/assets/js/theme-toggle.js"></script>
     <script is:inline src="/assets/js/reveal.js"></script>
-    <script is:inline src="/assets/js/cookie-toggle.js"></script>
   </body>
 </html>

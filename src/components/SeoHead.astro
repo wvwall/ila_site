@@ -1,4 +1,6 @@
 ---
+import logo from '../assets/logo.webp';
+
 const title = "Dott.ssa Ilaria Mezzanotti | Psicologa e Psicoterapeuta";
 const description =
   "Dott.ssa Ilaria Mezzanotti, Psicologa clinica abilitata e Psicoterapeutica specializzata presso la Scuola Gestalt di Torino. Riceve su appuntamento a Leinì, Robassomero e Cuorgnè o tramite consulenze online.";
@@ -16,7 +18,7 @@ const schema = {
   "@type": "Psychologist",
   name: "Dott.ssa Ilaria Mezzanotti",
   areaServed: ["Leinì", "Robassomero", "Cuorgnè", "Ciriè", "Torino", "Piemonte"],
-  image: `${SITE_URL}/assets/img/logo.webp`,
+  image: new URL(logo.src, SITE_URL).href,
   url: currentUrl,
   inLanguage: "it-IT",
   email: "ilaria.mezzanotti@gmail.com",

@@ -10,46 +10,33 @@ const servizi = [
 ];
 ---
 
-<section id="consulenze" class="container pb-16 mt-16">
-  <div class="bg-white dark:bg-slate-600">
-    <h2
-      class="pb-12 pl-5 text-3xl font-extrabold leading-8 tracking-tight services text-sec_color sm:text-4xl md:text-center">
-      Consulenze
-    </h2>
-    <div class="flex flex-col px-4 mx-auto mt-0 align-middle max-w-7xl sm:px-6 mb-14 md:mt-10 xl:flex-row">
-      <div class="mt-5 lg:text-left lg:px-10 animate__animated destra">
-        <p itemscope class="max-w-2xl text-2xl text-gray-800 lg:mx-auto dark:text-white">
-          Mi chiamo Ilaria Mezzanotti, sono una Psicologa clinica abilitata e Psicoteraupetica, specializzata
-          presso la
-          <a
-            class="underline text-dark_pri"
-            itemprop="url"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="La Terapia della Gestalt è una terapia esperienziale, volta all'accrescimento delle potenzialità del sè e delle qualita relazionali; si sviluppa da una concezione olistica, fenomenologica ed esistenzialista dell'essere umano e delle sue relazioni."
-            href="https://www.scuolapsicoterapiagestalt.it/">Scuola Gestalt di Torino</a
-          >. <br /><br />
-          Attualmente ricevo, su appuntamento, presso gli studi di Robassero, Leinì e Cuorgnè o tramite consulenze
-          online.
-        </p>
-      </div>
-
-      <div class="flex justify-center xl:mt-0 mt-14 animate__animated sinistra lg:px-10">
-        <dl class="mt-5 space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-2 md:gap-y-14">
-          {
-            servizi.map((s) => (
-              <div class="relative">
-                <dt>
-                  <div class="absolute flex items-center justify-center w-8 h-8 text-white rounded-md bg-hover_btn dark:bg-pri_color">
-                    <i class={`fa-solid ${s.icon}`} aria-hidden="true" />
-                  </div>
-                  <p class="ml-12 text-xl font-medium leading-8 text-gray-800 dark:text-white">{s.label}</p>
-                </dt>
-              </div>
-            ))
-          }
-        </dl>
-      </div>
-    </div>
-  </div>
-</section>
+<section
+        id="consulenze"
+        class="px-panel [&>h2]:mb-7 [&>h2]:text-brand-green tablet:[&>h2]:mb-10 mx-auto w-shell mt-section"
+        aria-labelledby="consultations-title"
+      >
+        <h2 id="consultations-title" class="font-medium tracking-[-0.035em] [text-wrap:pretty] text-section-title leading-[1.15] data-[visible=true]:animate-settle motion-reduce:!animate-none" data-reveal>Consulenze</h2>
+        <div class="grid grid-cols-1 items-start gap-10 desktop:grid-cols-[0.95fr_1.15fr] desktop:gap-[clamp(40px,6vw,88px)]">
+          <div class="max-w-[48ch] text-base leading-[1.8] tablet:max-w-[65ch] tablet:text-lg tablet:leading-[1.85] desktop:max-w-[48ch] [&>p+p]:mt-6 [&_a]:underline [&_a]:decoration-brand-pink [&_a]:decoration-2 [&_a]:underline-offset-4 [&_a:hover]:text-brand-green">
+            <p class="data-[visible=true]:animate-settle motion-reduce:!animate-none" data-reveal>
+              Mi chiamo Ilaria Mezzanotti, sono una Psicologa clinica abilitata e Psicoterapeuta,
+              specializzata presso la
+              <a href="https://www.scuolapsicoterapiagestalt.it/" target="_blank" rel="noopener noreferrer"
+                >Scuola Gestalt di Torino</a
+              >.
+            </p>
+            <p class="data-[visible=true]:animate-settle motion-reduce:!animate-none" data-reveal>
+              Attualmente ricevo, su appuntamento, presso gli studi di Robassomero, Leinì e Cuorgnè o tramite
+              consulenze online.
+            </p>
+          </div>
+          <ul class="m-0 grid list-none grid-cols-1 gap-6 p-0 tablet:grid-cols-2 tablet:gap-x-10 desktop:gap-x-8 desktop:gap-y-7 [&>li]:flex [&>li]:items-start [&>li]:gap-3.5 [&>li]:text-base [&>li]:leading-[1.6] [&_i]:w-[26px] [&_i]:shrink-0 [&_i]:pt-[3px] [&_i]:text-center [&_i]:text-[22px] [&_i]:text-brand-green" aria-label="Ambiti di consulenza">
+            {servizi.map((servizio) => (
+              <li class="data-[visible=true]:animate-settle motion-reduce:!animate-none" data-reveal>
+                <i class={`fa-solid ${servizio.icon}`} aria-hidden="true" />
+                <span>{servizio.label}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>

@@ -1,25 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const destra = document.querySelector(".destra");
-  if (destra) {
-    const observer1 = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate__fadeInLeft");
-        }
-      });
-    });
-    observer1.observe(destra);
-  }
+document.querySelector('#year').textContent = new Date().getFullYear()
 
-  const sinistra = document.querySelector(".sinistra");
-  if (sinistra) {
-    const observer2 = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate__fadeInRight");
-        }
-      });
-    });
-    observer2.observe(sinistra);
-  }
-});
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return
+      entry.target.dataset.visible = 'true'
+      observer.unobserve(entry.target)
+    })
+  }, { threshold: 0.12 })
+  document.querySelectorAll('[data-reveal]').forEach((element) => observer.observe(element))
+}
