@@ -20,7 +20,7 @@ import brandMark from '../assets/brand-mark.webp';
         <span aria-hidden="true" class="h-0.5 w-6 bg-current group-aria-expanded/toggle:opacity-0"></span>
         <span aria-hidden="true" class="h-0.5 w-6 bg-current transition-transform duration-150 group-aria-expanded/toggle:-translate-y-[7px] group-aria-expanded/toggle:-rotate-45"></span>
       </button>
-      <nav id="primary-navigation" class="absolute left-0 top-full ml-auto flex max-h-[calc(100dvh-74px)] w-full flex-col gap-1 overflow-y-auto bg-white/80 px-[clamp(20px,4vw,64px)] pb-4 backdrop-blur-md group-data-[menu-ready]/header:hidden group-data-[menu-open]/header:!flex tablet:static tablet:!flex tablet:max-h-none tablet:w-auto tablet:flex-row tablet:items-center tablet:gap-[clamp(20px,3vw,40px)] tablet:overflow-visible tablet:bg-transparent tablet:p-0 tablet:backdrop-blur-none [&>a]:py-3 [&>a]:text-base [&>a]:font-medium tablet:[&>a]:text-[15px] [&>a:hover]:text-brand-green" aria-label="Navigazione principale">
+      <nav id="primary-navigation" class="absolute left-0 top-full ml-auto flex max-h-[calc(100dvh-74px)] w-full flex-col gap-1 overflow-y-auto bg-white/80 px-[clamp(20px,4vw,64px)] pb-4 backdrop-blur-md group-data-[menu-ready]/header:hidden group-data-[menu-open]/header:!flex tablet:static tablet:!flex tablet:max-h-none tablet:w-auto tablet:flex-row tablet:items-center tablet:gap-[clamp(20px,3vw,40px)] tablet:overflow-visible tablet:bg-transparent tablet:p-0 tablet:backdrop-blur-none [&>a]:py-3 [&>a]:text-base [&>a]:font-medium tablet:[&>a]:text-[15px] [&>a:hover]:text-brand-green [&>a[aria-current=location]]:text-brand-deep [&>a[aria-current=location]]:underline [&>a[aria-current=location]]:decoration-brand-green [&>a[aria-current=location]]:decoration-2 [&>a[aria-current=location]]:underline-offset-[6px]" aria-label="Navigazione principale">
         <a href="#dove-ricevo">Dove ricevo</a>
         <a href="#consulenze">Consulenze</a>
         <a href="#contatti">Contatti</a>
@@ -67,5 +67,43 @@ import brandMark from '../assets/brand-mark.webp';
 
     window.matchMedia('(min-width: 701px)').addEventListener('change', closeMenu);
     header.dataset.menuReady = '';
+
+    const sectionLinks = Array.from(navigation.querySelectorAll<HTMLAnchorElement>('a[href^="#"]'))
+      .map((link) => ({ link, section: document.getElementById(link.hash.slice(1)) }));
+
+    const updateActiveLink = () => {
+      // Match the space left above anchor targets by the page's scroll padding.
+      const offset = header.getBoundingClientRect().bottom + 24;
+      let activeLink: HTMLAnchorElement | undefined;
+
+      for (const { link, section } of sectionLinks) {
+        if (section && section.getBoundingClientRect().top <= offset + 1) activeLink = link;
+      }
+
+      // The shorter contact section may never reach the header at the end of the page.
+      if (window.scrollY > 0 && Math.ceil(window.scrollY + window.innerHeight) >= document.documentElement.scrollHeight - 2) {
+        activeLink = sectionLinks.at(-1)?.link;
+      }
+
+      for (const { link } of sectionLinks) {
+        if (link === activeLink) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      }
+    };
+
+    let updatePending = false;
+    const scheduleActiveLinkUpdate = () => {
+      if (updatePending) return;
+      updatePending = true;
+      window.requestAnimationFrame(() => {
+        updateActiveLink();
+        updatePending = false;
+      });
+    };
+
+    window.addEventListener('scroll', scheduleActiveLinkUpdate, { passive: true });
+    window.addEventListener('resize', scheduleActiveLinkUpdate);
+    window.addEventListener('pageshow', scheduleActiveLinkUpdate);
+    updateActiveLink();
   }
 </script>
