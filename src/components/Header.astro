@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import brandMark from '../assets/brand-mark.webp';
 ---
 
-<header id="site-header" class="group/header sticky top-0 z-50 bg-white/95 backdrop-blur-md tablet:bg-white/80">
+<header id="site-header" class="group/header sticky top-0 z-50 isolate before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:bg-white/80 before:backdrop-blur-md">
   <div class="mx-auto flex w-shell flex-wrap items-center gap-x-4 tablet:flex-nowrap tablet:gap-x-8">
       <a class="flex min-h-[74px] shrink-0 items-center [&>img]:h-8 [&>img]:w-8 [&>img]:object-contain tablet:[&>img]:h-11 tablet:[&>img]:w-11" href="#home" aria-label="Ilaria Mezzanotti, home">
         <Image src={brandMark} width={48} densities={[1, 2]} alt="" loading="eager" />
@@ -20,7 +20,7 @@ import brandMark from '../assets/brand-mark.webp';
         <span aria-hidden="true" class="h-0.5 w-6 bg-current group-aria-expanded/toggle:opacity-0"></span>
         <span aria-hidden="true" class="h-0.5 w-6 bg-current transition-transform duration-150 group-aria-expanded/toggle:-translate-y-[7px] group-aria-expanded/toggle:-rotate-45"></span>
       </button>
-      <nav id="primary-navigation" class="ml-auto flex w-full flex-col gap-1 pb-4 group-data-[menu-ready]/header:hidden group-data-[menu-open]/header:!flex tablet:!flex tablet:w-auto tablet:flex-row tablet:items-center tablet:gap-[clamp(20px,3vw,40px)] tablet:pb-0 [&>a]:py-3 [&>a]:text-base [&>a]:font-medium tablet:[&>a]:text-[15px] [&>a:hover]:text-brand-green" aria-label="Navigazione principale">
+      <nav id="primary-navigation" class="absolute left-0 top-full ml-auto flex max-h-[calc(100dvh-74px)] w-full flex-col gap-1 overflow-y-auto bg-white/80 px-[clamp(20px,4vw,64px)] pb-4 backdrop-blur-md group-data-[menu-ready]/header:hidden group-data-[menu-open]/header:!flex tablet:static tablet:!flex tablet:max-h-none tablet:w-auto tablet:flex-row tablet:items-center tablet:gap-[clamp(20px,3vw,40px)] tablet:overflow-visible tablet:bg-transparent tablet:p-0 tablet:backdrop-blur-none [&>a]:py-3 [&>a]:text-base [&>a]:font-medium tablet:[&>a]:text-[15px] [&>a:hover]:text-brand-green" aria-label="Navigazione principale">
         <a href="#dove-ricevo">Dove ricevo</a>
         <a href="#consulenze">Consulenze</a>
         <a href="#contatti">Contatti</a>
