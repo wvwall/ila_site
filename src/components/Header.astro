@@ -3,15 +3,69 @@ import { Image } from 'astro:assets';
 import brandMark from '../assets/brand-mark.webp';
 ---
 
-<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md">
-  <div class="flex min-h-[74px] items-center gap-4 tablet:gap-8 mx-auto w-shell">
-      <a class="shrink-0 [&>img]:h-8 [&>img]:w-8 [&>img]:object-contain tablet:[&>img]:h-11 tablet:[&>img]:w-11" href="#home" aria-label="Ilaria Mezzanotti, home">
+<header id="site-header" class="group/header sticky top-0 z-50 bg-white/95 backdrop-blur-md tablet:bg-white/80">
+  <div class="mx-auto flex w-shell flex-wrap items-center gap-x-4 tablet:flex-nowrap tablet:gap-x-8">
+      <a class="flex min-h-[74px] shrink-0 items-center [&>img]:h-8 [&>img]:w-8 [&>img]:object-contain tablet:[&>img]:h-11 tablet:[&>img]:w-11" href="#home" aria-label="Ilaria Mezzanotti, home">
         <Image src={brandMark} width={48} densities={[1, 2]} alt="" loading="eager" />
       </a>
-      <nav class="ml-auto flex items-center gap-4 tablet:gap-[clamp(20px,3vw,40px)] [&>a]:py-3 [&>a]:text-[13px] [&>a]:font-medium tablet:[&>a]:text-[15px] [&>a:hover]:text-brand-green" aria-label="Navigazione principale">
+      <button
+        id="menu-toggle"
+        class="group/toggle ml-auto hidden h-11 w-11 flex-col items-center justify-center gap-[5px] text-brand-ink hover:text-brand-green focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-brand-ink focus-visible:outline-offset-[3px] group-data-[menu-ready]/header:inline-flex tablet:!hidden"
+        type="button"
+        aria-label="Apri menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span aria-hidden="true" class="h-0.5 w-6 bg-current transition-transform duration-150 group-aria-expanded/toggle:translate-y-[7px] group-aria-expanded/toggle:rotate-45"></span>
+        <span aria-hidden="true" class="h-0.5 w-6 bg-current group-aria-expanded/toggle:opacity-0"></span>
+        <span aria-hidden="true" class="h-0.5 w-6 bg-current transition-transform duration-150 group-aria-expanded/toggle:-translate-y-[7px] group-aria-expanded/toggle:-rotate-45"></span>
+      </button>
+      <nav id="primary-navigation" class="ml-auto flex w-full flex-col gap-1 pb-4 group-data-[menu-ready]/header:hidden group-data-[menu-open]/header:!flex tablet:!flex tablet:w-auto tablet:flex-row tablet:items-center tablet:gap-[clamp(20px,3vw,40px)] tablet:pb-0 [&>a]:py-3 [&>a]:text-base [&>a]:font-medium tablet:[&>a]:text-[15px] [&>a:hover]:text-brand-green" aria-label="Navigazione principale">
         <a href="#dove-ricevo">Dove ricevo</a>
-        <a href="#consulenze" class="hidden tablet:block">Consulenze</a>
+        <a href="#consulenze">Consulenze</a>
         <a href="#contatti">Contatti</a>
       </nav>
   </div>
 </header>
+
+<script>
+  const header = document.querySelector<HTMLElement>('#site-header');
+  const toggle = document.querySelector<HTMLButtonElement>('#menu-toggle');
+  const navigation = document.querySelector<HTMLElement>('#primary-navigation');
+
+  if (header && toggle && navigation) {
+    const closeMenu = () => {
+      delete header.dataset.menuOpen;
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Apri menu');
+    };
+
+    toggle.addEventListener('click', () => {
+      if (toggle.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+      } else {
+        header.dataset.menuOpen = '';
+        toggle.setAttribute('aria-expanded', 'true');
+        toggle.setAttribute('aria-label', 'Chiudi menu');
+      }
+    });
+
+    header.addEventListener('click', (event) => {
+      if (event.target instanceof Element && event.target.closest('a')) closeMenu();
+    });
+
+    document.addEventListener('click', (event) => {
+      if (event.target instanceof Node && !header.contains(event.target)) closeMenu();
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        toggle.focus();
+      }
+    });
+
+    window.matchMedia('(min-width: 701px)').addEventListener('change', closeMenu);
+    header.dataset.menuReady = '';
+  }
+</script>
