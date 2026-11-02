@@ -71,6 +71,22 @@ import brandMark from '../assets/brand-mark.webp';
     const sectionLinks = Array.from(navigation.querySelectorAll<HTMLAnchorElement>('a[href^="#"]'))
       .map((link) => ({ link, section: document.getElementById(link.hash.slice(1)) }));
 
+    // A clicked link is pinned while its smooth scroll runs. On tall viewports the page ends before
+    // the target reaches the header, so position alone cannot tell which link the user chose.
+    // The pin is released once position-based detection agrees, or when the user scrolls manually.
+    let pinnedLink: HTMLAnchorElement | undefined;
+
+    navigation.addEventListener('click', (event) => {
+      const link = event.target instanceof Element ? event.target.closest<HTMLAnchorElement>('a[href^="#"]') : null;
+      if (!link || !navigation.contains(link)) return;
+      pinnedLink = link;
+      updateActiveLink();
+    });
+
+    ['wheel', 'touchstart', 'keydown', 'pointerdown'].forEach((type) => {
+      window.addEventListener(type, () => { pinnedLink = undefined; }, { passive: true });
+    });
+
     const updateActiveLink = () => {
       // Match the space left above anchor targets by the page's scroll padding.
       const offset = header.getBoundingClientRect().bottom + 24;
@@ -83,6 +99,11 @@ import brandMark from '../assets/brand-mark.webp';
       // The shorter contact section may never reach the header at the end of the page.
       if (window.scrollY > 0 && Math.ceil(window.scrollY + window.innerHeight) >= document.documentElement.scrollHeight - 2) {
         activeLink = sectionLinks.at(-1)?.link;
+      }
+
+      if (pinnedLink) {
+        if (activeLink === pinnedLink) pinnedLink = undefined;
+        else activeLink = pinnedLink;
       }
 
       for (const { link } of sectionLinks) {
