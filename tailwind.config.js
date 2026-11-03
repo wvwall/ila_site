@@ -22,7 +22,7 @@ module.exports = {
         sans: ['Poppins', 'sans-serif'],
       },
       fontSize: {
-        'hero-mobile': 'clamp(34px, 8.4vw, 52px)',
+        'hero-mobile': 'clamp(38px, 10.6vw, 56px)',
         'hero-tablet': 'clamp(38px, 5vw, 52px)',
         hero: 'clamp(42px, 5.4vw, 76px)',
         profession: 'clamp(17px, 1.7vw, 22px)',
