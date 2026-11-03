@@ -54,8 +54,8 @@ module.exports = {
         'settle-slow': 'settle 700ms cubic-bezier(0.2, 0.65, 0.3, 1) both',
         // First-load hero intro. `backwards` keeps the hidden state during the delay
         // but releases the transform afterwards, so hover lifts keep working.
-        'hero-rise': 'hero-rise 650ms cubic-bezier(0.25, 1, 0.5, 1) backwards',
-        'hero-bloom': 'hero-bloom 800ms cubic-bezier(0.25, 1, 0.5, 1) backwards',
+        'hero-rise': 'hero-rise 950ms cubic-bezier(0.25, 1, 0.5, 1) backwards',
+        'hero-bloom': 'hero-bloom 1200ms cubic-bezier(0.25, 1, 0.5, 1) backwards',
       },
     },
   },
