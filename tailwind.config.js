@@ -40,22 +40,22 @@ module.exports = {
           from: { opacity: '0.35', transform: 'translateY(18px)' },
           to: { opacity: '1', transform: 'translateY(0)' },
         },
-        'hero-rise': {
-          from: { opacity: '0', transform: 'translateX(-32px)' },
-          to: { opacity: '1', transform: 'translateX(0)' },
+        'hero-line': {
+          from: { transform: 'translateY(105%)' },
+          to: { transform: 'translateY(0)' },
         },
-        'hero-bloom': {
-          from: { opacity: '0', transform: 'translateX(40px)' },
-          to: { opacity: '1', transform: 'translateX(0)' },
+        'hero-fade': {
+          from: { opacity: '0' },
+          to: { opacity: '1' },
         },
       },
       animation: {
         settle: 'settle 420ms cubic-bezier(0.2, 0.65, 0.3, 1) both',
         'settle-slow': 'settle 700ms cubic-bezier(0.2, 0.65, 0.3, 1) both',
-        // First-load hero intro. `backwards` keeps the hidden state during the delay
-        // but releases the transform afterwards, so hover lifts keep working.
-        'hero-rise': 'hero-rise 1300ms cubic-bezier(0.22, 1, 0.36, 1) backwards',
-        'hero-bloom': 'hero-bloom 1500ms cubic-bezier(0.22, 1, 0.36, 1) backwards',
+        // First-load hero intro: title lines rise from behind a mask, the rest fades in.
+        // `backwards` keeps the hidden state during the delay and then releases it.
+        'hero-line': 'hero-line 1100ms cubic-bezier(0.22, 1, 0.36, 1) backwards',
+        'hero-fade': 'hero-fade 1000ms ease-out backwards',
       },
     },
   },
