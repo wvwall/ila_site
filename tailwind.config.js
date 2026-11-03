@@ -41,12 +41,12 @@ module.exports = {
           to: { opacity: '1', transform: 'translateY(0)' },
         },
         'hero-rise': {
-          from: { opacity: '0', transform: 'translateY(12px)' },
-          to: { opacity: '1', transform: 'translateY(0)' },
+          from: { opacity: '0', transform: 'translateX(-32px)' },
+          to: { opacity: '1', transform: 'translateX(0)' },
         },
         'hero-bloom': {
-          from: { opacity: '0', transform: 'scale(0.97)' },
-          to: { opacity: '1', transform: 'scale(1)' },
+          from: { opacity: '0', transform: 'translateX(40px)' },
+          to: { opacity: '1', transform: 'translateX(0)' },
         },
       },
       animation: {
@@ -54,8 +54,8 @@ module.exports = {
         'settle-slow': 'settle 700ms cubic-bezier(0.2, 0.65, 0.3, 1) both',
         // First-load hero intro. `backwards` keeps the hidden state during the delay
         // but releases the transform afterwards, so hover lifts keep working.
-        'hero-rise': 'hero-rise 950ms cubic-bezier(0.25, 1, 0.5, 1) backwards',
-        'hero-bloom': 'hero-bloom 1200ms cubic-bezier(0.25, 1, 0.5, 1) backwards',
+        'hero-rise': 'hero-rise 1300ms cubic-bezier(0.22, 1, 0.36, 1) backwards',
+        'hero-bloom': 'hero-bloom 1500ms cubic-bezier(0.22, 1, 0.36, 1) backwards',
       },
     },
   },
