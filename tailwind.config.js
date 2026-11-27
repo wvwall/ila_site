@@ -11,13 +11,11 @@ module.exports = {
       colors: {
         brand: {
           pink: '#e9828d',
-          // Darker pink for fills behind white text: 4.6:1 contrast (WCAG AA).
-          'pink-strong': '#c44d5a',
           green: '#649d8d',
           mint: '#92c5b6',
           ink: '#3a4245',
           deep: '#20292c',
-          hover: '#ae424d',
+          hover: '#f29882',
         },
       },
       fontFamily: {
